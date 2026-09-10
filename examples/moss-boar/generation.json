@@ -1,0 +1,28 @@
+{
+  "master": {
+    "prompt": "Use case: stylized-concept. Asset type: rigging master reference for a 2D SIDE-SCROLLING platform game. A charming NON-HUMANOID four-legged moss boar creature, stocky horizontal bean-shaped moss-green body, short orange snout and small ivory tusks, expressive amber eye, four short sturdy paws, small leaf-tipped tail, soft leafy ridge. Strong clean hand-painted 2D game sprite shading, crisp silhouette. Character faces RIGHT in a THREE-QUARTER SIDE view: predominantly side-on, turned only 20 degrees toward the viewer from strict profile, visible near side and a narrow front plane of the snout. NOT frontal, NOT isometric or top-down. Ground-level orthographic camera, all four paws readable, far paws slightly higher and smaller, neutral standing pose. One complete creature, isolated on genuinely transparent RGBA background, no shadow, no floor, no text, no grid, no other images or turnarounds. Wide composition with comfortable margins. Keep a recognizably animal quadruped silhouette, no hands or human torso.",
+    "source": "images/master.png"
+  },
+  "body": {
+    "prompt": "Use the reference moss boar as the identity master. Produce ONE isolated rigging part: its entire horizontal BODY AND HEAD as a continuous single part, same right-facing THREE-QUARTER SIDE angle, orange snout, ivory tusks, amber eye and leafy ridge. Remove all four legs and the tail completely. Fill the underside with continuous moss/brown belly so legs can overlap underneath. Do not include stumps, paws, floor, shadows, outer glow or colored atmosphere. Keep body/head proportions and all details from reference. Genuine transparent RGBA background, clean alpha edge, no checkerboard, no backdrop. Wide part centered with margins.",
+    "source": "images/body.png"
+  },
+  "leg": {
+    "prompt": "Use the reference moss boar as identity master. Produce ONE isolated near-side LEG sprite: a short thick moss-green animal leg with a rounded hidden upper shoulder/hip connection, subtle knee at middle, and dark cloven hoof at bottom pointing RIGHT. Three-quarter SIDE view matching this right-facing boar, not frontal. One connected vertical leg, soft furry leafy surface, dark brown hoof, crisp game art. No body/head/tail or other parts. Transparent RGBA background with zero outside alpha. No outer glow, scene, shadow or checkerboard. Full hidden upper connection with overlap, centered large.",
+    "source": "images/leg.png"
+  },
+  "tail": {
+    "prompt": "Use the reference moss boar as identity master. Produce ONE isolated tail sprite. Short woody curved animal tail extending LEFT from rounded connection at its right end, ending in the exact moss-green leaf cluster at the left end. Same hand-painted color and lighting, side view. No body, legs, head or other parts. Genuinely transparent RGBA background. Clean alpha edges, no outer glow, shadow, colored atmosphere or checkerboard. One horizontal tail sprite with generous margins.",
+    "source": "images/tail.png"
+  },
+  "body-v2": {
+    "prompt": "Edit the provided moss boar body rigging sprite. Remove the ENTIRE painted gray/white checkerboard backdrop and all pale marks outside the silhouette. Preserve ONLY the exact moss-covered body and head, no legs or tail. Keep the silhouette, right-facing three-quarter-side perspective, proportions, eye, orange snout, tusks, leafy detail and colors unchanged. Output actual transparent RGBA pixels outside the creature, not a drawing of transparency. No checkerboard, outer glow, shadow or background. Clean isolated single body/head sprite.",
+    "source": "images/body-v2.png",
+    "rejected": "Opaque painted checkerboard remained; no alpha channel."
+  },
+  "body-v3": {
+    "prompt": "Generate a NEW transparent game sprite matching this moss boar reference: the green leafy body plus attached head, WITHOUT legs and WITHOUT tail. Wide horizontal moss-green furry bean body with leafy ridge, orange boar snout facing right, ivory tusks, amber eye. Right-facing three-quarter side view for a side-scrolling platformer. Entire smooth underbelly filled in. High quality hand-painted game art. Isolated cutout on TRANSPARENT RGBA alpha background. Single torso-head attachment only. No background, no checkerboard, no drop shadow, no outer glow.",
+    "source": "images/body-v3.png"
+  },
+  "mode": "builtin-imagegen"
+}

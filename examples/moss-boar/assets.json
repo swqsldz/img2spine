@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "master": "images/master.png",
+  "assets": [
+    {
+      "id": "body",
+      "file": "images/body-v3.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "center",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 250,
+        "y": 140,
+        "width": 600,
+        "height": 360,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Generate a NEW transparent game sprite matching this moss boar reference: the green leafy body plus attached head, WITHOUT legs and WITHOUT tail. Wide horizontal moss-green furry bean body with leafy ridge, orange boar snout facing right, ivory tusks, amber eye. Right-facing three-quarter side view for a side-scrolling platformer. Entire smooth underbelly filled in. High quality hand-painted game art. Isolated cutout on TRANSPARENT RGBA alpha background. Single torso-head attachment only. No background, no checkerboard, no drop shadow, no outer glow.",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "hindFar",
+      "file": "images/leg.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "far",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 328,
+        "y": 370,
+        "width": 96,
+        "height": 206,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Use the reference moss boar as identity master. Produce ONE isolated near-side LEG sprite: a short thick moss-green animal leg with a rounded hidden upper shoulder/hip connection, subtle knee at middle, and dark cloven hoof at bottom pointing RIGHT. Three-quarter SIDE view matching this right-facing boar, not frontal. One connected vertical leg, soft furry leafy surface, dark brown hoof, crisp game art. No body/head/tail or other parts. Transparent RGBA background with zero outside alpha. No outer glow, scene, shadow or checkerboard. Full hidden upper connection with overlap, centered large.",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "foreFar",
+      "file": "images/leg.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "far",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 642,
+        "y": 358,
+        "width": 96,
+        "height": 206,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Use the reference moss boar as identity master. Produce ONE isolated near-side LEG sprite: a short thick moss-green animal leg with a rounded hidden upper shoulder/hip connection, subtle knee at middle, and dark cloven hoof at bottom pointing RIGHT. Three-quarter SIDE view matching this right-facing boar, not frontal. One connected vertical leg, soft furry leafy surface, dark brown hoof, crisp game art. No body/head/tail or other parts. Transparent RGBA background with zero outside alpha. No outer glow, scene, shadow or checkerboard. Full hidden upper connection with overlap, centered large.",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "hindNear",
+      "file": "images/leg.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "near",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 288,
+        "y": 390,
+        "width": 110,
+        "height": 220,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Use the reference moss boar as identity master. Produce ONE isolated near-side LEG sprite: a short thick moss-green animal leg with a rounded hidden upper shoulder/hip connection, subtle knee at middle, and dark cloven hoof at bottom pointing RIGHT. Three-quarter SIDE view matching this right-facing boar, not frontal. One connected vertical leg, soft furry leafy surface, dark brown hoof, crisp game art. No body/head/tail or other parts. Transparent RGBA background with zero outside alpha. No outer glow, scene, shadow or checkerboard. Full hidden upper connection with overlap, centered large.",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "foreNear",
+      "file": "images/leg.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "near",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 592,
+        "y": 390,
+        "width": 110,
+        "height": 220,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Use the reference moss boar as identity master. Produce ONE isolated near-side LEG sprite: a short thick moss-green animal leg with a rounded hidden upper shoulder/hip connection, subtle knee at middle, and dark cloven hoof at bottom pointing RIGHT. Three-quarter SIDE view matching this right-facing boar, not frontal. One connected vertical leg, soft furry leafy surface, dark brown hoof, crisp game art. No body/head/tail or other parts. Transparent RGBA background with zero outside alpha. No outer glow, scene, shadow or checkerboard. Full hidden upper connection with overlap, centered large.",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "tail",
+      "file": "images/tail.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "center",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 105,
+        "y": 245,
+        "width": 205,
+        "height": 140,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Use the reference moss boar as identity master. Produce ONE isolated tail sprite. Short woody curved animal tail extending LEFT from rounded connection at its right end, ending in the exact moss-green leaf cluster at the left end. Same hand-painted color and lighting, side view. No body, legs, head or other parts. Genuinely transparent RGBA background. Clean alpha edges, no outer glow, shadow, colored atmosphere or checkerboard. One horizontal tail sprite with generous margins.",
+        "reference": "images/master.png"
+      }
+    }
+  ]
+}

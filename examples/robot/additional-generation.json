@@ -1,0 +1,18 @@
+{
+  "arm-v3": {
+    "source": "generation-id:exec-3c4b67d4-41c5-40b9-b47d-b77d066f9674.png",
+    "prompt": "Create a new isolated orange robot arm asset matching the provided robot. One complete arm vertically straight down with navy ball shoulder, orange upper arm, navy elbow, orange forearm, orange mitten hand. Centered tall sprite. Transparent background. RGBA PNG. Only the arm. Sharp clean edges. No scene or shadow."
+  },
+  "leg-v3": {
+    "source": "generation-id:exec-caf450fd-f733-46ec-a7c6-5d018db8a767.png",
+    "prompt": "Create a new isolated orange robot leg asset matching the provided robot. One complete leg vertically straight down with navy hip ball, orange thigh, navy knee, orange shin, orange front-facing chunky boot. Centered tall sprite. Transparent background. RGBA PNG. Only the leg. Sharp clean edges. No scene or shadow."
+  },
+  "head-closed-v2": {
+    "source": "generation-id:exec-74146bf6-d8e7-410e-869d-59cfb7c6c51e.png",
+    "prompt": "Edit only the eyes of this helmet. Replace the two round glowing eyes by two thin horizontal cream lines indicating closed eyes. Keep the helmet pixel position, size, outline, color, lighting and original transparent background unchanged. No glow outside the helmet. Transparent RGBA PNG."
+  },
+  "torso-back": {
+    "source": "generation-id:exec-29949baa-ddfd-4add-b865-035482ce6315.png",
+    "prompt": "Create the rear view of this orange robot's torso and pelvis ONLY, a single body attachment. Navy waist and hip sockets, orange rear metal panels, small navy vent on upper back, no cream chest lamp. No head, no arms, no legs. Same outline and proportions as the master torso. Centered sprite. Transparent RGBA PNG background. Clean edges, no scene, no shadow."
+  }
+}

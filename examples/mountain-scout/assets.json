@@ -1,0 +1,595 @@
+{
+  "schemaVersion": 1,
+  "master": "master.png",
+  "assets": [
+    {
+      "id": "torso",
+      "file": "assets/torso.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "center",
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 385,
+        "y": 171.75,
+        "width": 225.75,
+        "height": 312,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          -4,
+          3
+        ],
+        "source1": [
+          164,
+          313
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Use case: precise-object-edit. Input image is the EDIT TARGET. Make ONE targeted production correction ONLY to the TORSO in top row second column. Its near shoulder currently has a large hollow dark circular armhole with a thick outlined orange rim. This becomes an ugly exposed disk when the separate sleeve rotates forward. REPAINT that entire armhole interior AND all its inner concentric rim lines as smooth CONTINUOUS RUST-ORANGE JACKET FABRIC, with natural shoulder/underarm shading continuing from the chest. It must NOT look like a vest opening, cut tube, socket, circle, ring, disk or hole. This is hidden complete jacket material underneath the separate moving sleeve. Keep the outer silhouette and top shoulder panel, collar, zipper, chest, waist belt, hem, pose, dimensions and scale the same. Remove the oval-shaped internal outline across the filled area; no circle-shaped seam. No arm attached to torso: only repaint its exposed socket surface into unbroken cloth. ALL OTHER ELEVEN PARTS remain unchanged. Keep exact 1254x1254 sheet layout, flat magenta background, identity, materials and lighting. No labels or guides.\n",
+        "reference": "master.png"
+      },
+      "sha256": "b79b5d73b4ec5d732d3ccf9ae64dbe66a8419688fec535393e8c700a459321f6",
+      "normalizedFile": "assets/torso.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 226,
+        "height": 312,
+        "originalWidth": 226,
+        "originalHeight": 312
+      }
+    },
+    {
+      "id": "head",
+      "file": "assets/head.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "center",
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 445,
+        "y": 78,
+        "width": 124,
+        "height": 154,
+        "rotation": -0.19226699479857565,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          173,
+          124
+        ],
+        "source1": [
+          113,
+          243
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Use case: precise-object-edit. Input image is EDIT TARGET, a 12-part Spine cutout sheet. Make ONLY TWO corrections. 1) TOP LEFT HEAD: remove every bit of orange collar, zipper, shirt and clothing from this head cutout. Preserve exact face/hair/ears/beard, and complete a natural full bare neck down to a simple unoutlined hidden neck base. The separate torso already owns the collar, so the head must be just hair, face, beard and bare neck, NO clothing. Keep the head top and face scale at the existing location. 2) BOTTOM ROW SECOND COLUMN GREY PANTS: it incorrectly contains TWO attached trouser legs. Replace this component with EXACTLY ONE SINGLE LEFT trouser leg, inner-side view, from complete hidden hip root to ankle cuff. Remove the entire extra rear branch/second leg/crotch. A single long narrow trouser shaft with one thigh, one natural slightly bent knee and one calf, ONE ankle opening, no foot, no kneecap circles. Grey fabric and seam style identical to original. The outer silhouette has just one upper end and one lower end, no fork, notch, slit or Y shape. Keep this corrected single leg roughly in the right half of its former cell, x500–610 on the 1254x1254 sheet, from y700 to1190. Preserve ALL OTHER TEN PARTS including near leg, hands, torso, sleeves and boots unchanged. Preserve sheet dimensions and all layout positions, flat pure magenta #FF00FF background, style and lighting. No labels, extra parts, guides, pivots or shadows. Do not draw an assembled character.\n",
+        "reference": "master.png"
+      },
+      "sha256": "e25567fe59170f65e882059ae38fbfeff32c6eaf5f644e7bb4524c8e7f303643",
+      "normalizedFile": "assets/head.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 124,
+        "height": 154,
+        "originalWidth": 124,
+        "originalHeight": 154
+      }
+    },
+    {
+      "id": "upperNear",
+      "file": "assets/upperNear.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "near",
+      "anatomy": {
+        "side": "right",
+        "pair": "upper-arm",
+        "surface": "outer"
+      },
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 339.14953339860114,
+        "y": 216.81427252325722,
+        "width": 130.91772053083434,
+        "height": 212.15384455253152,
+        "rotation": 5.125902944116847,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          114,
+          52
+        ],
+        "source1": [
+          56,
+          289
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Character brief: 用更新后的工作流生成一个新角色测试。测试角色：半侧身朝右的成年男性山地斥候，黑色短发和短胡须，铁锈橙短外套、灰色长裤、棕色短靴与无指手套。制作待机、原地行走、原地跑步及徒手攻击。\nIdentity and morphology: humanoid; Adult male mountain scout, short black hair, neat dark beard, rust-orange short jacket with raised collar and dark belt, slate-grey flexible trousers, brown ankle boots and dark fingerless gloves. Compact athletic proportions. Crisp hand-painted 2D game art with simple consistent shading.\nPresentation: side-scroller, three-quarter-side, facing right. Predominantly profile, 15–30 degrees toward viewer; stable orthographic game proportions.\nActions:\n- idle: 自然站立和轻微呼吸; 2s; loop=true; in-place; views=three-quarter-side\n- walk: 朝右原地行走，交替支撑，脚掌接地; 1.4s; loop=true; in-place; views=three-quarter-side\n- run: 朝右原地跑步，抬腿、屈肘摆臂; 0.8s; loop=true; in-place; views=three-quarter-side\n- attack: 蓄势、向右出拳、跟随、收拳恢复; 1.2s; loop=false; in-place; views=three-quarter-side\nUse the attached inspected master as identity reference. Generate only the requested parts for each view, keeping scale, lighting and material consistent.\nBackground: flat uniform #FF00FF, no gradients, shadows, spill or use of this key color in the character; preserve edge color for chroma removal.\nPART INVENTORY (IDs are metadata: do not paint labels):\n- torso [three-quarter-side, center, central body]: Rust-orange fitted scout jacket with raised overlapping collar, complete torso under sleeves, dark waist belt and short hem above hip crease; no neck stump or dangling hip plug; material=rust-orange jacket, dark shoulder panels, collar, belt and front zipper; binding=region.\n- head [three-quarter-side, center, central body]: Short black-haired adult male scout head, neat dark beard with complete neck continuing beneath the collar; material=skin and black hair; binding=region.\n- upperNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- upperFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- lowerNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerNearHand [three-quarter-side, near, right anatomical side, back surface; near camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for right anatomical side, back surface; near camera depth; material=dark leather glove and exposed fingers; binding=region.\n- lowerFarHand [three-quarter-side, far, left anatomical side, palm surface; far camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for left anatomical side, palm surface; far camera depth; material=dark leather glove and exposed fingers; binding=region.\n- legNearBoot [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legFarBoot [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legNear + legNearShin).\n- legFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legFar + legFarShin).\nJOINT DESIGN:\n- neck: covered-overlap, parts=head + torso, seam owner=torso. Full head-owned neck extends behind front collar; keep visible chest skin and no horizontal cut line\n- hipNear: covered-overlap, parts=legNear + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeNear: continuous-mesh, parts=legNear, seam owner=legNear. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowNear: covered-overlap, parts=upperNear + lowerNear, seam owner=upperNear. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleNear: covered-overlap, parts=legNear + legNearBoot, seam owner=legNear. Leg covers proximal boot opening; foot stays rigid and independently controlled\n- hipFar: covered-overlap, parts=legFar + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeFar: continuous-mesh, parts=legFar, seam owner=legFar. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowFar: covered-overlap, parts=upperFar + lowerFar, seam owner=upperFar. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleFar: covered-overlap, parts=legFar + legFarBoot, seam owner=legFar. Leg covers proximal boot opening; foot stays rigid and independently controlled\nREFERENCE OCCLUSION (back to front):\nthree-quarter-side: lowerFarHand → lowerFar → upperFar → legFarBoot → legFar → legNearBoot → legNear → head → torso → lowerNearHand → lowerNear → upperNear\nGive each part complete hidden material and enough opaque overlap for its planned bend range. Continuous meshes must have a single continuous silhouette and natural folds across the joint: no duplicate joint caps or artificial hinge disks. Split only where specified, conceal cut edges beneath their seam owner. Keep far/near and anatomical left/right distinct; do not copy an asymmetric paired appendage. Separate parts with generous empty margins, never overlap sheet cells. If the inventory is too crowded, generate smaller semantic groups with the same master. Do not paint pivots, guides, labels, bounding boxes or anatomy markers. Preserve real armor hardware when specified.\n\n\nUse case: identity-preserve. INPUT IMAGE is the identity/assembled appearance reference ONLY. Generate a single production CUTOUT PARTS SHEET, NOT an assembled character or sequence of poses. 12 isolated parts, three rows of four cells on a LARGE square canvas. Row 1 left to right: complete head with neck, sleeveless torso with collar and belt, right/near upper sleeve, left/far upper sleeve. Row 2 left to right: right/near bare forearm, left/far bare forearm, right/near gloved hand showing dorsal side, left/far gloved hand showing palm side. Row 3 left to right: right/near COMPLETE grey trouser leg from hip to ankle, left/far COMPLETE grey trouser leg from hip to ankle, right/near boot showing outer surface, left/far boot showing inner surface. Generous empty magenta gutters between all twelve parts. NO names, numbers, row lines or cell borders. Keep exact master identity, orange jacket, rolled sleeve material, short hair, beard, grey cloth and brown boots. Each entire trouser leg MUST be one continuous flexible illustration, never thigh/shin pieces or knee armor. Leg pose is nearly straight with a gentle anatomical bend; knees face right, ankles below hips. The legs are long relative to torso and should occupy most of row 3 height; feet are separate and much smaller. Forearms are bare skin, gloves at distal wrist only, sleeves cover proximal overlap. Hands are compact relaxed fists suitable for punching. Head must include full natural neck extending into collar, torso has an empty collar opening not a skin stump. Complete hips extend invisibly under jacket. NO tan disks, hinges, cut-face rings or marks. Both boot toes point right, far foot clearly inner surface without duplicating the near boot's outer buckle. Do not mirror the near hand/boot to fake far anatomy. Keep body half-side predominantly profile facing right. No cast shadows. Flat uniform magenta #FF00FF. High resolution crisp edges, keep all cutouts entirely inside canvas.\n",
+        "reference": "master.png"
+      },
+      "sha256": "02e37ad20529c9aefcd466138ea6065b75cc44a8c780a93ed3fb9ab2cd42ac94",
+      "normalizedFile": "assets/upperNear.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 131,
+        "height": 212,
+        "originalWidth": 131,
+        "originalHeight": 212
+      }
+    },
+    {
+      "id": "upperFar",
+      "file": "assets/upperFar.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "far",
+      "anatomy": {
+        "side": "left",
+        "pair": "upper-arm",
+        "surface": "inner"
+      },
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 522.6431224723729,
+        "y": 238.91545165497888,
+        "width": 108.29775820593193,
+        "height": 193.13100213391192,
+        "rotation": 0.034095493915270066,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          72,
+          55
+        ],
+        "source1": [
+          122,
+          286
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Character brief: 用更新后的工作流生成一个新角色测试。测试角色：半侧身朝右的成年男性山地斥候，黑色短发和短胡须，铁锈橙短外套、灰色长裤、棕色短靴与无指手套。制作待机、原地行走、原地跑步及徒手攻击。\nIdentity and morphology: humanoid; Adult male mountain scout, short black hair, neat dark beard, rust-orange short jacket with raised collar and dark belt, slate-grey flexible trousers, brown ankle boots and dark fingerless gloves. Compact athletic proportions. Crisp hand-painted 2D game art with simple consistent shading.\nPresentation: side-scroller, three-quarter-side, facing right. Predominantly profile, 15–30 degrees toward viewer; stable orthographic game proportions.\nActions:\n- idle: 自然站立和轻微呼吸; 2s; loop=true; in-place; views=three-quarter-side\n- walk: 朝右原地行走，交替支撑，脚掌接地; 1.4s; loop=true; in-place; views=three-quarter-side\n- run: 朝右原地跑步，抬腿、屈肘摆臂; 0.8s; loop=true; in-place; views=three-quarter-side\n- attack: 蓄势、向右出拳、跟随、收拳恢复; 1.2s; loop=false; in-place; views=three-quarter-side\nUse the attached inspected master as identity reference. Generate only the requested parts for each view, keeping scale, lighting and material consistent.\nBackground: flat uniform #FF00FF, no gradients, shadows, spill or use of this key color in the character; preserve edge color for chroma removal.\nPART INVENTORY (IDs are metadata: do not paint labels):\n- torso [three-quarter-side, center, central body]: Rust-orange fitted scout jacket with raised overlapping collar, complete torso under sleeves, dark waist belt and short hem above hip crease; no neck stump or dangling hip plug; material=rust-orange jacket, dark shoulder panels, collar, belt and front zipper; binding=region.\n- head [three-quarter-side, center, central body]: Short black-haired adult male scout head, neat dark beard with complete neck continuing beneath the collar; material=skin and black hair; binding=region.\n- upperNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- upperFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- lowerNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerNearHand [three-quarter-side, near, right anatomical side, back surface; near camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for right anatomical side, back surface; near camera depth; material=dark leather glove and exposed fingers; binding=region.\n- lowerFarHand [three-quarter-side, far, left anatomical side, palm surface; far camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for left anatomical side, palm surface; far camera depth; material=dark leather glove and exposed fingers; binding=region.\n- legNearBoot [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legFarBoot [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legNear + legNearShin).\n- legFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legFar + legFarShin).\nJOINT DESIGN:\n- neck: covered-overlap, parts=head + torso, seam owner=torso. Full head-owned neck extends behind front collar; keep visible chest skin and no horizontal cut line\n- hipNear: covered-overlap, parts=legNear + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeNear: continuous-mesh, parts=legNear, seam owner=legNear. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowNear: covered-overlap, parts=upperNear + lowerNear, seam owner=upperNear. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleNear: covered-overlap, parts=legNear + legNearBoot, seam owner=legNear. Leg covers proximal boot opening; foot stays rigid and independently controlled\n- hipFar: covered-overlap, parts=legFar + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeFar: continuous-mesh, parts=legFar, seam owner=legFar. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowFar: covered-overlap, parts=upperFar + lowerFar, seam owner=upperFar. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleFar: covered-overlap, parts=legFar + legFarBoot, seam owner=legFar. Leg covers proximal boot opening; foot stays rigid and independently controlled\nREFERENCE OCCLUSION (back to front):\nthree-quarter-side: lowerFarHand → lowerFar → upperFar → legFarBoot → legFar → legNearBoot → legNear → head → torso → lowerNearHand → lowerNear → upperNear\nGive each part complete hidden material and enough opaque overlap for its planned bend range. Continuous meshes must have a single continuous silhouette and natural folds across the joint: no duplicate joint caps or artificial hinge disks. Split only where specified, conceal cut edges beneath their seam owner. Keep far/near and anatomical left/right distinct; do not copy an asymmetric paired appendage. Separate parts with generous empty margins, never overlap sheet cells. If the inventory is too crowded, generate smaller semantic groups with the same master. Do not paint pivots, guides, labels, bounding boxes or anatomy markers. Preserve real armor hardware when specified.\n\n\nUse case: identity-preserve. INPUT IMAGE is the identity/assembled appearance reference ONLY. Generate a single production CUTOUT PARTS SHEET, NOT an assembled character or sequence of poses. 12 isolated parts, three rows of four cells on a LARGE square canvas. Row 1 left to right: complete head with neck, sleeveless torso with collar and belt, right/near upper sleeve, left/far upper sleeve. Row 2 left to right: right/near bare forearm, left/far bare forearm, right/near gloved hand showing dorsal side, left/far gloved hand showing palm side. Row 3 left to right: right/near COMPLETE grey trouser leg from hip to ankle, left/far COMPLETE grey trouser leg from hip to ankle, right/near boot showing outer surface, left/far boot showing inner surface. Generous empty magenta gutters between all twelve parts. NO names, numbers, row lines or cell borders. Keep exact master identity, orange jacket, rolled sleeve material, short hair, beard, grey cloth and brown boots. Each entire trouser leg MUST be one continuous flexible illustration, never thigh/shin pieces or knee armor. Leg pose is nearly straight with a gentle anatomical bend; knees face right, ankles below hips. The legs are long relative to torso and should occupy most of row 3 height; feet are separate and much smaller. Forearms are bare skin, gloves at distal wrist only, sleeves cover proximal overlap. Hands are compact relaxed fists suitable for punching. Head must include full natural neck extending into collar, torso has an empty collar opening not a skin stump. Complete hips extend invisibly under jacket. NO tan disks, hinges, cut-face rings or marks. Both boot toes point right, far foot clearly inner surface without duplicating the near boot's outer buckle. Do not mirror the near hand/boot to fake far anatomy. Keep body half-side predominantly profile facing right. No cast shadows. Flat uniform magenta #FF00FF. High resolution crisp edges, keep all cutouts entirely inside canvas.\n",
+        "reference": "master.png"
+      },
+      "sha256": "5619b871bef8f8a18bbe9fcc657041f94b34ebeac1791229e48a593f5fecdc2f",
+      "normalizedFile": "assets/upperFar.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 108,
+        "height": 193,
+        "originalWidth": 108,
+        "originalHeight": 193
+      }
+    },
+    {
+      "id": "lowerNear",
+      "file": "assets/lowerNear.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "near",
+      "anatomy": {
+        "side": "right",
+        "pair": "forearm",
+        "surface": "outer"
+      },
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 340.194597038198,
+        "y": 401.2205665235491,
+        "width": 61.09213817102141,
+        "height": 108.48136684573896,
+        "rotation": 1.6907544692558822,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          48,
+          12
+        ],
+        "source1": [
+          63,
+          164
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Character brief: 用更新后的工作流生成一个新角色测试。测试角色：半侧身朝右的成年男性山地斥候，黑色短发和短胡须，铁锈橙短外套、灰色长裤、棕色短靴与无指手套。制作待机、原地行走、原地跑步及徒手攻击。\nIdentity and morphology: humanoid; Adult male mountain scout, short black hair, neat dark beard, rust-orange short jacket with raised collar and dark belt, slate-grey flexible trousers, brown ankle boots and dark fingerless gloves. Compact athletic proportions. Crisp hand-painted 2D game art with simple consistent shading.\nPresentation: side-scroller, three-quarter-side, facing right. Predominantly profile, 15–30 degrees toward viewer; stable orthographic game proportions.\nActions:\n- idle: 自然站立和轻微呼吸; 2s; loop=true; in-place; views=three-quarter-side\n- walk: 朝右原地行走，交替支撑，脚掌接地; 1.4s; loop=true; in-place; views=three-quarter-side\n- run: 朝右原地跑步，抬腿、屈肘摆臂; 0.8s; loop=true; in-place; views=three-quarter-side\n- attack: 蓄势、向右出拳、跟随、收拳恢复; 1.2s; loop=false; in-place; views=three-quarter-side\nUse the attached inspected master as identity reference. Generate only the requested parts for each view, keeping scale, lighting and material consistent.\nBackground: flat uniform #FF00FF, no gradients, shadows, spill or use of this key color in the character; preserve edge color for chroma removal.\nPART INVENTORY (IDs are metadata: do not paint labels):\n- torso [three-quarter-side, center, central body]: Rust-orange fitted scout jacket with raised overlapping collar, complete torso under sleeves, dark waist belt and short hem above hip crease; no neck stump or dangling hip plug; material=rust-orange jacket, dark shoulder panels, collar, belt and front zipper; binding=region.\n- head [three-quarter-side, center, central body]: Short black-haired adult male scout head, neat dark beard with complete neck continuing beneath the collar; material=skin and black hair; binding=region.\n- upperNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- upperFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- lowerNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerNearHand [three-quarter-side, near, right anatomical side, back surface; near camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for right anatomical side, back surface; near camera depth; material=dark leather glove and exposed fingers; binding=region.\n- lowerFarHand [three-quarter-side, far, left anatomical side, palm surface; far camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for left anatomical side, palm surface; far camera depth; material=dark leather glove and exposed fingers; binding=region.\n- legNearBoot [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legFarBoot [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legNear + legNearShin).\n- legFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legFar + legFarShin).\nJOINT DESIGN:\n- neck: covered-overlap, parts=head + torso, seam owner=torso. Full head-owned neck extends behind front collar; keep visible chest skin and no horizontal cut line\n- hipNear: covered-overlap, parts=legNear + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeNear: continuous-mesh, parts=legNear, seam owner=legNear. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowNear: covered-overlap, parts=upperNear + lowerNear, seam owner=upperNear. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleNear: covered-overlap, parts=legNear + legNearBoot, seam owner=legNear. Leg covers proximal boot opening; foot stays rigid and independently controlled\n- hipFar: covered-overlap, parts=legFar + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeFar: continuous-mesh, parts=legFar, seam owner=legFar. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowFar: covered-overlap, parts=upperFar + lowerFar, seam owner=upperFar. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleFar: covered-overlap, parts=legFar + legFarBoot, seam owner=legFar. Leg covers proximal boot opening; foot stays rigid and independently controlled\nREFERENCE OCCLUSION (back to front):\nthree-quarter-side: lowerFarHand → lowerFar → upperFar → legFarBoot → legFar → legNearBoot → legNear → head → torso → lowerNearHand → lowerNear → upperNear\nGive each part complete hidden material and enough opaque overlap for its planned bend range. Continuous meshes must have a single continuous silhouette and natural folds across the joint: no duplicate joint caps or artificial hinge disks. Split only where specified, conceal cut edges beneath their seam owner. Keep far/near and anatomical left/right distinct; do not copy an asymmetric paired appendage. Separate parts with generous empty margins, never overlap sheet cells. If the inventory is too crowded, generate smaller semantic groups with the same master. Do not paint pivots, guides, labels, bounding boxes or anatomy markers. Preserve real armor hardware when specified.\n\n\nUse case: identity-preserve. INPUT IMAGE is the identity/assembled appearance reference ONLY. Generate a single production CUTOUT PARTS SHEET, NOT an assembled character or sequence of poses. 12 isolated parts, three rows of four cells on a LARGE square canvas. Row 1 left to right: complete head with neck, sleeveless torso with collar and belt, right/near upper sleeve, left/far upper sleeve. Row 2 left to right: right/near bare forearm, left/far bare forearm, right/near gloved hand showing dorsal side, left/far gloved hand showing palm side. Row 3 left to right: right/near COMPLETE grey trouser leg from hip to ankle, left/far COMPLETE grey trouser leg from hip to ankle, right/near boot showing outer surface, left/far boot showing inner surface. Generous empty magenta gutters between all twelve parts. NO names, numbers, row lines or cell borders. Keep exact master identity, orange jacket, rolled sleeve material, short hair, beard, grey cloth and brown boots. Each entire trouser leg MUST be one continuous flexible illustration, never thigh/shin pieces or knee armor. Leg pose is nearly straight with a gentle anatomical bend; knees face right, ankles below hips. The legs are long relative to torso and should occupy most of row 3 height; feet are separate and much smaller. Forearms are bare skin, gloves at distal wrist only, sleeves cover proximal overlap. Hands are compact relaxed fists suitable for punching. Head must include full natural neck extending into collar, torso has an empty collar opening not a skin stump. Complete hips extend invisibly under jacket. NO tan disks, hinges, cut-face rings or marks. Both boot toes point right, far foot clearly inner surface without duplicating the near boot's outer buckle. Do not mirror the near hand/boot to fake far anatomy. Keep body half-side predominantly profile facing right. No cast shadows. Flat uniform magenta #FF00FF. High resolution crisp edges, keep all cutouts entirely inside canvas.\n",
+        "reference": "master.png"
+      },
+      "sha256": "dbc1d61d9e519e4fd074ae938eb73a2cbfa575565e63784c9cc1eb35ddbd2593",
+      "normalizedFile": "assets/lowerNear.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 61,
+        "height": 108,
+        "originalWidth": 61,
+        "originalHeight": 108
+      }
+    },
+    {
+      "id": "lowerFar",
+      "file": "assets/lowerFar.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "far",
+      "anatomy": {
+        "side": "left",
+        "pair": "forearm",
+        "surface": "inner"
+      },
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 582.4101869677633,
+        "y": 400.87083890514486,
+        "width": 61.99514682689683,
+        "height": 113.26036439529227,
+        "rotation": -15.702732873918329,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          45,
+          12
+        ],
+        "source1": [
+          65,
+          164
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Character brief: 用更新后的工作流生成一个新角色测试。测试角色：半侧身朝右的成年男性山地斥候，黑色短发和短胡须，铁锈橙短外套、灰色长裤、棕色短靴与无指手套。制作待机、原地行走、原地跑步及徒手攻击。\nIdentity and morphology: humanoid; Adult male mountain scout, short black hair, neat dark beard, rust-orange short jacket with raised collar and dark belt, slate-grey flexible trousers, brown ankle boots and dark fingerless gloves. Compact athletic proportions. Crisp hand-painted 2D game art with simple consistent shading.\nPresentation: side-scroller, three-quarter-side, facing right. Predominantly profile, 15–30 degrees toward viewer; stable orthographic game proportions.\nActions:\n- idle: 自然站立和轻微呼吸; 2s; loop=true; in-place; views=three-quarter-side\n- walk: 朝右原地行走，交替支撑，脚掌接地; 1.4s; loop=true; in-place; views=three-quarter-side\n- run: 朝右原地跑步，抬腿、屈肘摆臂; 0.8s; loop=true; in-place; views=three-quarter-side\n- attack: 蓄势、向右出拳、跟随、收拳恢复; 1.2s; loop=false; in-place; views=three-quarter-side\nUse the attached inspected master as identity reference. Generate only the requested parts for each view, keeping scale, lighting and material consistent.\nBackground: flat uniform #FF00FF, no gradients, shadows, spill or use of this key color in the character; preserve edge color for chroma removal.\nPART INVENTORY (IDs are metadata: do not paint labels):\n- torso [three-quarter-side, center, central body]: Rust-orange fitted scout jacket with raised overlapping collar, complete torso under sleeves, dark waist belt and short hem above hip crease; no neck stump or dangling hip plug; material=rust-orange jacket, dark shoulder panels, collar, belt and front zipper; binding=region.\n- head [three-quarter-side, center, central body]: Short black-haired adult male scout head, neat dark beard with complete neck continuing beneath the collar; material=skin and black hair; binding=region.\n- upperNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- upperFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- lowerNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerNearHand [three-quarter-side, near, right anatomical side, back surface; near camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for right anatomical side, back surface; near camera depth; material=dark leather glove and exposed fingers; binding=region.\n- lowerFarHand [three-quarter-side, far, left anatomical side, palm surface; far camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for left anatomical side, palm surface; far camera depth; material=dark leather glove and exposed fingers; binding=region.\n- legNearBoot [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legFarBoot [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legNear + legNearShin).\n- legFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legFar + legFarShin).\nJOINT DESIGN:\n- neck: covered-overlap, parts=head + torso, seam owner=torso. Full head-owned neck extends behind front collar; keep visible chest skin and no horizontal cut line\n- hipNear: covered-overlap, parts=legNear + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeNear: continuous-mesh, parts=legNear, seam owner=legNear. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowNear: covered-overlap, parts=upperNear + lowerNear, seam owner=upperNear. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleNear: covered-overlap, parts=legNear + legNearBoot, seam owner=legNear. Leg covers proximal boot opening; foot stays rigid and independently controlled\n- hipFar: covered-overlap, parts=legFar + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeFar: continuous-mesh, parts=legFar, seam owner=legFar. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowFar: covered-overlap, parts=upperFar + lowerFar, seam owner=upperFar. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleFar: covered-overlap, parts=legFar + legFarBoot, seam owner=legFar. Leg covers proximal boot opening; foot stays rigid and independently controlled\nREFERENCE OCCLUSION (back to front):\nthree-quarter-side: lowerFarHand → lowerFar → upperFar → legFarBoot → legFar → legNearBoot → legNear → head → torso → lowerNearHand → lowerNear → upperNear\nGive each part complete hidden material and enough opaque overlap for its planned bend range. Continuous meshes must have a single continuous silhouette and natural folds across the joint: no duplicate joint caps or artificial hinge disks. Split only where specified, conceal cut edges beneath their seam owner. Keep far/near and anatomical left/right distinct; do not copy an asymmetric paired appendage. Separate parts with generous empty margins, never overlap sheet cells. If the inventory is too crowded, generate smaller semantic groups with the same master. Do not paint pivots, guides, labels, bounding boxes or anatomy markers. Preserve real armor hardware when specified.\n\n\nUse case: identity-preserve. INPUT IMAGE is the identity/assembled appearance reference ONLY. Generate a single production CUTOUT PARTS SHEET, NOT an assembled character or sequence of poses. 12 isolated parts, three rows of four cells on a LARGE square canvas. Row 1 left to right: complete head with neck, sleeveless torso with collar and belt, right/near upper sleeve, left/far upper sleeve. Row 2 left to right: right/near bare forearm, left/far bare forearm, right/near gloved hand showing dorsal side, left/far gloved hand showing palm side. Row 3 left to right: right/near COMPLETE grey trouser leg from hip to ankle, left/far COMPLETE grey trouser leg from hip to ankle, right/near boot showing outer surface, left/far boot showing inner surface. Generous empty magenta gutters between all twelve parts. NO names, numbers, row lines or cell borders. Keep exact master identity, orange jacket, rolled sleeve material, short hair, beard, grey cloth and brown boots. Each entire trouser leg MUST be one continuous flexible illustration, never thigh/shin pieces or knee armor. Leg pose is nearly straight with a gentle anatomical bend; knees face right, ankles below hips. The legs are long relative to torso and should occupy most of row 3 height; feet are separate and much smaller. Forearms are bare skin, gloves at distal wrist only, sleeves cover proximal overlap. Hands are compact relaxed fists suitable for punching. Head must include full natural neck extending into collar, torso has an empty collar opening not a skin stump. Complete hips extend invisibly under jacket. NO tan disks, hinges, cut-face rings or marks. Both boot toes point right, far foot clearly inner surface without duplicating the near boot's outer buckle. Do not mirror the near hand/boot to fake far anatomy. Keep body half-side predominantly profile facing right. No cast shadows. Flat uniform magenta #FF00FF. High resolution crisp edges, keep all cutouts entirely inside canvas.\n",
+        "reference": "master.png"
+      },
+      "sha256": "48c7fc72e4312ce4b5c0651aba933bf01900cd1e48c9afab65333a437d892329",
+      "normalizedFile": "assets/lowerFar.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 113,
+        "originalWidth": 62,
+        "originalHeight": 113
+      }
+    },
+    {
+      "id": "lowerNearHand",
+      "file": "assets/lowerNearHand.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "near",
+      "anatomy": {
+        "side": "right",
+        "pair": "hand",
+        "surface": "back"
+      },
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 351.96,
+        "y": 481.52,
+        "width": 62.4,
+        "height": 84.47999999999999,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          48,
+          26
+        ],
+        "source1": [
+          48,
+          126
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Character brief: 用更新后的工作流生成一个新角色测试。测试角色：半侧身朝右的成年男性山地斥候，黑色短发和短胡须，铁锈橙短外套、灰色长裤、棕色短靴与无指手套。制作待机、原地行走、原地跑步及徒手攻击。\nIdentity and morphology: humanoid; Adult male mountain scout, short black hair, neat dark beard, rust-orange short jacket with raised collar and dark belt, slate-grey flexible trousers, brown ankle boots and dark fingerless gloves. Compact athletic proportions. Crisp hand-painted 2D game art with simple consistent shading.\nPresentation: side-scroller, three-quarter-side, facing right. Predominantly profile, 15–30 degrees toward viewer; stable orthographic game proportions.\nActions:\n- idle: 自然站立和轻微呼吸; 2s; loop=true; in-place; views=three-quarter-side\n- walk: 朝右原地行走，交替支撑，脚掌接地; 1.4s; loop=true; in-place; views=three-quarter-side\n- run: 朝右原地跑步，抬腿、屈肘摆臂; 0.8s; loop=true; in-place; views=three-quarter-side\n- attack: 蓄势、向右出拳、跟随、收拳恢复; 1.2s; loop=false; in-place; views=three-quarter-side\nUse the attached inspected master as identity reference. Generate only the requested parts for each view, keeping scale, lighting and material consistent.\nBackground: flat uniform #FF00FF, no gradients, shadows, spill or use of this key color in the character; preserve edge color for chroma removal.\nPART INVENTORY (IDs are metadata: do not paint labels):\n- torso [three-quarter-side, center, central body]: Rust-orange fitted scout jacket with raised overlapping collar, complete torso under sleeves, dark waist belt and short hem above hip crease; no neck stump or dangling hip plug; material=rust-orange jacket, dark shoulder panels, collar, belt and front zipper; binding=region.\n- head [three-quarter-side, center, central body]: Short black-haired adult male scout head, neat dark beard with complete neck continuing beneath the collar; material=skin and black hair; binding=region.\n- upperNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- upperFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- lowerNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerNearHand [three-quarter-side, near, right anatomical side, back surface; near camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for right anatomical side, back surface; near camera depth; material=dark leather glove and exposed fingers; binding=region.\n- lowerFarHand [three-quarter-side, far, left anatomical side, palm surface; far camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for left anatomical side, palm surface; far camera depth; material=dark leather glove and exposed fingers; binding=region.\n- legNearBoot [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legFarBoot [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legNear + legNearShin).\n- legFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legFar + legFarShin).\nJOINT DESIGN:\n- neck: covered-overlap, parts=head + torso, seam owner=torso. Full head-owned neck extends behind front collar; keep visible chest skin and no horizontal cut line\n- hipNear: covered-overlap, parts=legNear + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeNear: continuous-mesh, parts=legNear, seam owner=legNear. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowNear: covered-overlap, parts=upperNear + lowerNear, seam owner=upperNear. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleNear: covered-overlap, parts=legNear + legNearBoot, seam owner=legNear. Leg covers proximal boot opening; foot stays rigid and independently controlled\n- hipFar: covered-overlap, parts=legFar + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeFar: continuous-mesh, parts=legFar, seam owner=legFar. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowFar: covered-overlap, parts=upperFar + lowerFar, seam owner=upperFar. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleFar: covered-overlap, parts=legFar + legFarBoot, seam owner=legFar. Leg covers proximal boot opening; foot stays rigid and independently controlled\nREFERENCE OCCLUSION (back to front):\nthree-quarter-side: lowerFarHand → lowerFar → upperFar → legFarBoot → legFar → legNearBoot → legNear → head → torso → lowerNearHand → lowerNear → upperNear\nGive each part complete hidden material and enough opaque overlap for its planned bend range. Continuous meshes must have a single continuous silhouette and natural folds across the joint: no duplicate joint caps or artificial hinge disks. Split only where specified, conceal cut edges beneath their seam owner. Keep far/near and anatomical left/right distinct; do not copy an asymmetric paired appendage. Separate parts with generous empty margins, never overlap sheet cells. If the inventory is too crowded, generate smaller semantic groups with the same master. Do not paint pivots, guides, labels, bounding boxes or anatomy markers. Preserve real armor hardware when specified.\n\n\nUse case: identity-preserve. INPUT IMAGE is the identity/assembled appearance reference ONLY. Generate a single production CUTOUT PARTS SHEET, NOT an assembled character or sequence of poses. 12 isolated parts, three rows of four cells on a LARGE square canvas. Row 1 left to right: complete head with neck, sleeveless torso with collar and belt, right/near upper sleeve, left/far upper sleeve. Row 2 left to right: right/near bare forearm, left/far bare forearm, right/near gloved hand showing dorsal side, left/far gloved hand showing palm side. Row 3 left to right: right/near COMPLETE grey trouser leg from hip to ankle, left/far COMPLETE grey trouser leg from hip to ankle, right/near boot showing outer surface, left/far boot showing inner surface. Generous empty magenta gutters between all twelve parts. NO names, numbers, row lines or cell borders. Keep exact master identity, orange jacket, rolled sleeve material, short hair, beard, grey cloth and brown boots. Each entire trouser leg MUST be one continuous flexible illustration, never thigh/shin pieces or knee armor. Leg pose is nearly straight with a gentle anatomical bend; knees face right, ankles below hips. The legs are long relative to torso and should occupy most of row 3 height; feet are separate and much smaller. Forearms are bare skin, gloves at distal wrist only, sleeves cover proximal overlap. Hands are compact relaxed fists suitable for punching. Head must include full natural neck extending into collar, torso has an empty collar opening not a skin stump. Complete hips extend invisibly under jacket. NO tan disks, hinges, cut-face rings or marks. Both boot toes point right, far foot clearly inner surface without duplicating the near boot's outer buckle. Do not mirror the near hand/boot to fake far anatomy. Keep body half-side predominantly profile facing right. No cast shadows. Flat uniform magenta #FF00FF. High resolution crisp edges, keep all cutouts entirely inside canvas.\n",
+        "reference": "master.png"
+      },
+      "sha256": "43764c1f6d17cc15da8aac26341440782626f0cd95645255ea5fe47d9a98d910",
+      "normalizedFile": "assets/lowerNearHand.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 84,
+        "originalWidth": 62,
+        "originalHeight": 84
+      }
+    },
+    {
+      "id": "lowerFarHand",
+      "file": "assets/lowerFarHand.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "far",
+      "anatomy": {
+        "side": "left",
+        "pair": "hand",
+        "surface": "palm"
+      },
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 619.622320687,
+        "y": 476.1551612230915,
+        "width": 62.565358626000055,
+        "height": 83.57967755381686,
+        "rotation": -19.573125830410195,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          45,
+          27
+        ],
+        "source1": [
+          45,
+          127
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Character brief: 用更新后的工作流生成一个新角色测试。测试角色：半侧身朝右的成年男性山地斥候，黑色短发和短胡须，铁锈橙短外套、灰色长裤、棕色短靴与无指手套。制作待机、原地行走、原地跑步及徒手攻击。\nIdentity and morphology: humanoid; Adult male mountain scout, short black hair, neat dark beard, rust-orange short jacket with raised collar and dark belt, slate-grey flexible trousers, brown ankle boots and dark fingerless gloves. Compact athletic proportions. Crisp hand-painted 2D game art with simple consistent shading.\nPresentation: side-scroller, three-quarter-side, facing right. Predominantly profile, 15–30 degrees toward viewer; stable orthographic game proportions.\nActions:\n- idle: 自然站立和轻微呼吸; 2s; loop=true; in-place; views=three-quarter-side\n- walk: 朝右原地行走，交替支撑，脚掌接地; 1.4s; loop=true; in-place; views=three-quarter-side\n- run: 朝右原地跑步，抬腿、屈肘摆臂; 0.8s; loop=true; in-place; views=three-quarter-side\n- attack: 蓄势、向右出拳、跟随、收拳恢复; 1.2s; loop=false; in-place; views=three-quarter-side\nUse the attached inspected master as identity reference. Generate only the requested parts for each view, keeping scale, lighting and material consistent.\nBackground: flat uniform #FF00FF, no gradients, shadows, spill or use of this key color in the character; preserve edge color for chroma removal.\nPART INVENTORY (IDs are metadata: do not paint labels):\n- torso [three-quarter-side, center, central body]: Rust-orange fitted scout jacket with raised overlapping collar, complete torso under sleeves, dark waist belt and short hem above hip crease; no neck stump or dangling hip plug; material=rust-orange jacket, dark shoulder panels, collar, belt and front zipper; binding=region.\n- head [three-quarter-side, center, central body]: Short black-haired adult male scout head, neat dark beard with complete neck continuing beneath the collar; material=skin and black hair; binding=region.\n- upperNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- upperFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- lowerNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerNearHand [three-quarter-side, near, right anatomical side, back surface; near camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for right anatomical side, back surface; near camera depth; material=dark leather glove and exposed fingers; binding=region.\n- lowerFarHand [three-quarter-side, far, left anatomical side, palm surface; far camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for left anatomical side, palm surface; far camera depth; material=dark leather glove and exposed fingers; binding=region.\n- legNearBoot [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legFarBoot [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legNear + legNearShin).\n- legFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legFar + legFarShin).\nJOINT DESIGN:\n- neck: covered-overlap, parts=head + torso, seam owner=torso. Full head-owned neck extends behind front collar; keep visible chest skin and no horizontal cut line\n- hipNear: covered-overlap, parts=legNear + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeNear: continuous-mesh, parts=legNear, seam owner=legNear. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowNear: covered-overlap, parts=upperNear + lowerNear, seam owner=upperNear. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleNear: covered-overlap, parts=legNear + legNearBoot, seam owner=legNear. Leg covers proximal boot opening; foot stays rigid and independently controlled\n- hipFar: covered-overlap, parts=legFar + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeFar: continuous-mesh, parts=legFar, seam owner=legFar. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowFar: covered-overlap, parts=upperFar + lowerFar, seam owner=upperFar. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleFar: covered-overlap, parts=legFar + legFarBoot, seam owner=legFar. Leg covers proximal boot opening; foot stays rigid and independently controlled\nREFERENCE OCCLUSION (back to front):\nthree-quarter-side: lowerFarHand → lowerFar → upperFar → legFarBoot → legFar → legNearBoot → legNear → head → torso → lowerNearHand → lowerNear → upperNear\nGive each part complete hidden material and enough opaque overlap for its planned bend range. Continuous meshes must have a single continuous silhouette and natural folds across the joint: no duplicate joint caps or artificial hinge disks. Split only where specified, conceal cut edges beneath their seam owner. Keep far/near and anatomical left/right distinct; do not copy an asymmetric paired appendage. Separate parts with generous empty margins, never overlap sheet cells. If the inventory is too crowded, generate smaller semantic groups with the same master. Do not paint pivots, guides, labels, bounding boxes or anatomy markers. Preserve real armor hardware when specified.\n\n\nUse case: identity-preserve. INPUT IMAGE is the identity/assembled appearance reference ONLY. Generate a single production CUTOUT PARTS SHEET, NOT an assembled character or sequence of poses. 12 isolated parts, three rows of four cells on a LARGE square canvas. Row 1 left to right: complete head with neck, sleeveless torso with collar and belt, right/near upper sleeve, left/far upper sleeve. Row 2 left to right: right/near bare forearm, left/far bare forearm, right/near gloved hand showing dorsal side, left/far gloved hand showing palm side. Row 3 left to right: right/near COMPLETE grey trouser leg from hip to ankle, left/far COMPLETE grey trouser leg from hip to ankle, right/near boot showing outer surface, left/far boot showing inner surface. Generous empty magenta gutters between all twelve parts. NO names, numbers, row lines or cell borders. Keep exact master identity, orange jacket, rolled sleeve material, short hair, beard, grey cloth and brown boots. Each entire trouser leg MUST be one continuous flexible illustration, never thigh/shin pieces or knee armor. Leg pose is nearly straight with a gentle anatomical bend; knees face right, ankles below hips. The legs are long relative to torso and should occupy most of row 3 height; feet are separate and much smaller. Forearms are bare skin, gloves at distal wrist only, sleeves cover proximal overlap. Hands are compact relaxed fists suitable for punching. Head must include full natural neck extending into collar, torso has an empty collar opening not a skin stump. Complete hips extend invisibly under jacket. NO tan disks, hinges, cut-face rings or marks. Both boot toes point right, far foot clearly inner surface without duplicating the near boot's outer buckle. Do not mirror the near hand/boot to fake far anatomy. Keep body half-side predominantly profile facing right. No cast shadows. Flat uniform magenta #FF00FF. High resolution crisp edges, keep all cutouts entirely inside canvas.\n",
+        "reference": "master.png"
+      },
+      "sha256": "881fbdfe634b4d22a0f5e5a002567ce5830b1b3edc51f95f4fc7d8c5f1cad8a8",
+      "normalizedFile": "assets/lowerFarHand.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 63,
+        "height": 84,
+        "originalWidth": 63,
+        "originalHeight": 84
+      }
+    },
+    {
+      "id": "legNear",
+      "file": "assets/legNear.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "near",
+      "anatomy": {
+        "side": "right",
+        "pair": "leg",
+        "surface": "outer"
+      },
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 385.2824272580545,
+        "y": 440.76564024385414,
+        "width": 147.1249420703258,
+        "height": 431.169627917082,
+        "rotation": 2.3430335313714155,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          107,
+          31
+        ],
+        "source1": [
+          46,
+          496
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Character brief: 用更新后的工作流生成一个新角色测试。测试角色：半侧身朝右的成年男性山地斥候，黑色短发和短胡须，铁锈橙短外套、灰色长裤、棕色短靴与无指手套。制作待机、原地行走、原地跑步及徒手攻击。\nIdentity and morphology: humanoid; Adult male mountain scout, short black hair, neat dark beard, rust-orange short jacket with raised collar and dark belt, slate-grey flexible trousers, brown ankle boots and dark fingerless gloves. Compact athletic proportions. Crisp hand-painted 2D game art with simple consistent shading.\nPresentation: side-scroller, three-quarter-side, facing right. Predominantly profile, 15–30 degrees toward viewer; stable orthographic game proportions.\nActions:\n- idle: 自然站立和轻微呼吸; 2s; loop=true; in-place; views=three-quarter-side\n- walk: 朝右原地行走，交替支撑，脚掌接地; 1.4s; loop=true; in-place; views=three-quarter-side\n- run: 朝右原地跑步，抬腿、屈肘摆臂; 0.8s; loop=true; in-place; views=three-quarter-side\n- attack: 蓄势、向右出拳、跟随、收拳恢复; 1.2s; loop=false; in-place; views=three-quarter-side\nUse the attached inspected master as identity reference. Generate only the requested parts for each view, keeping scale, lighting and material consistent.\nBackground: flat uniform #FF00FF, no gradients, shadows, spill or use of this key color in the character; preserve edge color for chroma removal.\nPART INVENTORY (IDs are metadata: do not paint labels):\n- torso [three-quarter-side, center, central body]: Rust-orange fitted scout jacket with raised overlapping collar, complete torso under sleeves, dark waist belt and short hem above hip crease; no neck stump or dangling hip plug; material=rust-orange jacket, dark shoulder panels, collar, belt and front zipper; binding=region.\n- head [three-quarter-side, center, central body]: Short black-haired adult male scout head, neat dark beard with complete neck continuing beneath the collar; material=skin and black hair; binding=region.\n- upperNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- upperFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- lowerNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerNearHand [three-quarter-side, near, right anatomical side, back surface; near camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for right anatomical side, back surface; near camera depth; material=dark leather glove and exposed fingers; binding=region.\n- lowerFarHand [three-quarter-side, far, left anatomical side, palm surface; far camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for left anatomical side, palm surface; far camera depth; material=dark leather glove and exposed fingers; binding=region.\n- legNearBoot [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legFarBoot [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legNear + legNearShin).\n- legFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legFar + legFarShin).\nJOINT DESIGN:\n- neck: covered-overlap, parts=head + torso, seam owner=torso. Full head-owned neck extends behind front collar; keep visible chest skin and no horizontal cut line\n- hipNear: covered-overlap, parts=legNear + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeNear: continuous-mesh, parts=legNear, seam owner=legNear. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowNear: covered-overlap, parts=upperNear + lowerNear, seam owner=upperNear. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleNear: covered-overlap, parts=legNear + legNearBoot, seam owner=legNear. Leg covers proximal boot opening; foot stays rigid and independently controlled\n- hipFar: covered-overlap, parts=legFar + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeFar: continuous-mesh, parts=legFar, seam owner=legFar. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowFar: covered-overlap, parts=upperFar + lowerFar, seam owner=upperFar. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleFar: covered-overlap, parts=legFar + legFarBoot, seam owner=legFar. Leg covers proximal boot opening; foot stays rigid and independently controlled\nREFERENCE OCCLUSION (back to front):\nthree-quarter-side: lowerFarHand → lowerFar → upperFar → legFarBoot → legFar → legNearBoot → legNear → head → torso → lowerNearHand → lowerNear → upperNear\nGive each part complete hidden material and enough opaque overlap for its planned bend range. Continuous meshes must have a single continuous silhouette and natural folds across the joint: no duplicate joint caps or artificial hinge disks. Split only where specified, conceal cut edges beneath their seam owner. Keep far/near and anatomical left/right distinct; do not copy an asymmetric paired appendage. Separate parts with generous empty margins, never overlap sheet cells. If the inventory is too crowded, generate smaller semantic groups with the same master. Do not paint pivots, guides, labels, bounding boxes or anatomy markers. Preserve real armor hardware when specified.\n\n\nUse case: identity-preserve. INPUT IMAGE is the identity/assembled appearance reference ONLY. Generate a single production CUTOUT PARTS SHEET, NOT an assembled character or sequence of poses. 12 isolated parts, three rows of four cells on a LARGE square canvas. Row 1 left to right: complete head with neck, sleeveless torso with collar and belt, right/near upper sleeve, left/far upper sleeve. Row 2 left to right: right/near bare forearm, left/far bare forearm, right/near gloved hand showing dorsal side, left/far gloved hand showing palm side. Row 3 left to right: right/near COMPLETE grey trouser leg from hip to ankle, left/far COMPLETE grey trouser leg from hip to ankle, right/near boot showing outer surface, left/far boot showing inner surface. Generous empty magenta gutters between all twelve parts. NO names, numbers, row lines or cell borders. Keep exact master identity, orange jacket, rolled sleeve material, short hair, beard, grey cloth and brown boots. Each entire trouser leg MUST be one continuous flexible illustration, never thigh/shin pieces or knee armor. Leg pose is nearly straight with a gentle anatomical bend; knees face right, ankles below hips. The legs are long relative to torso and should occupy most of row 3 height; feet are separate and much smaller. Forearms are bare skin, gloves at distal wrist only, sleeves cover proximal overlap. Hands are compact relaxed fists suitable for punching. Head must include full natural neck extending into collar, torso has an empty collar opening not a skin stump. Complete hips extend invisibly under jacket. NO tan disks, hinges, cut-face rings or marks. Both boot toes point right, far foot clearly inner surface without duplicating the near boot's outer buckle. Do not mirror the near hand/boot to fake far anatomy. Keep body half-side predominantly profile facing right. No cast shadows. Flat uniform magenta #FF00FF. High resolution crisp edges, keep all cutouts entirely inside canvas.\n",
+        "reference": "master.png"
+      },
+      "sha256": "06512a8f95052b3c0ac15eb61395b77762ce1d27d165dfcd0f520a2f676f4a99",
+      "normalizedFile": "assets/legNear.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 147,
+        "height": 431,
+        "originalWidth": 147,
+        "originalHeight": 431
+      }
+    },
+    {
+      "id": "legFar",
+      "file": "assets/legFar.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "far",
+      "anatomy": {
+        "side": "left",
+        "pair": "leg",
+        "surface": "inner"
+      },
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 498.68016867621066,
+        "y": 440.80707048289185,
+        "width": 114.18100430124488,
+        "height": 432.6859110362964,
+        "rotation": -4.835461862603643,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          60,
+          28
+        ],
+        "source1": [
+          63,
+          490
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Use case: precise-object-edit. Input image is EDIT TARGET, a 12-part Spine cutout sheet. Make ONLY TWO corrections. 1) TOP LEFT HEAD: remove every bit of orange collar, zipper, shirt and clothing from this head cutout. Preserve exact face/hair/ears/beard, and complete a natural full bare neck down to a simple unoutlined hidden neck base. The separate torso already owns the collar, so the head must be just hair, face, beard and bare neck, NO clothing. Keep the head top and face scale at the existing location. 2) BOTTOM ROW SECOND COLUMN GREY PANTS: it incorrectly contains TWO attached trouser legs. Replace this component with EXACTLY ONE SINGLE LEFT trouser leg, inner-side view, from complete hidden hip root to ankle cuff. Remove the entire extra rear branch/second leg/crotch. A single long narrow trouser shaft with one thigh, one natural slightly bent knee and one calf, ONE ankle opening, no foot, no kneecap circles. Grey fabric and seam style identical to original. The outer silhouette has just one upper end and one lower end, no fork, notch, slit or Y shape. Keep this corrected single leg roughly in the right half of its former cell, x500–610 on the 1254x1254 sheet, from y700 to1190. Preserve ALL OTHER TEN PARTS including near leg, hands, torso, sleeves and boots unchanged. Preserve sheet dimensions and all layout positions, flat pure magenta #FF00FF background, style and lighting. No labels, extra parts, guides, pivots or shadows. Do not draw an assembled character.\n",
+        "reference": "master.png"
+      },
+      "sha256": "0d78f531044795e5d1a9a594d512215057f698ed8fa4a922691e08cb69e76a11",
+      "normalizedFile": "assets/legFar.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 114,
+        "height": 432,
+        "originalWidth": 114,
+        "originalHeight": 433
+      }
+    },
+    {
+      "id": "legNearBoot",
+      "file": "assets/legNearBoot.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "near",
+      "anatomy": {
+        "side": "right",
+        "pair": "boot",
+        "surface": "outer"
+      },
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 376.3999999999999,
+        "y": 837.24,
+        "width": 140.58,
+        "height": 104.28,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          60,
+          36
+        ],
+        "source1": [
+          160,
+          36
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Character brief: 用更新后的工作流生成一个新角色测试。测试角色：半侧身朝右的成年男性山地斥候，黑色短发和短胡须，铁锈橙短外套、灰色长裤、棕色短靴与无指手套。制作待机、原地行走、原地跑步及徒手攻击。\nIdentity and morphology: humanoid; Adult male mountain scout, short black hair, neat dark beard, rust-orange short jacket with raised collar and dark belt, slate-grey flexible trousers, brown ankle boots and dark fingerless gloves. Compact athletic proportions. Crisp hand-painted 2D game art with simple consistent shading.\nPresentation: side-scroller, three-quarter-side, facing right. Predominantly profile, 15–30 degrees toward viewer; stable orthographic game proportions.\nActions:\n- idle: 自然站立和轻微呼吸; 2s; loop=true; in-place; views=three-quarter-side\n- walk: 朝右原地行走，交替支撑，脚掌接地; 1.4s; loop=true; in-place; views=three-quarter-side\n- run: 朝右原地跑步，抬腿、屈肘摆臂; 0.8s; loop=true; in-place; views=three-quarter-side\n- attack: 蓄势、向右出拳、跟随、收拳恢复; 1.2s; loop=false; in-place; views=three-quarter-side\nUse the attached inspected master as identity reference. Generate only the requested parts for each view, keeping scale, lighting and material consistent.\nBackground: flat uniform #FF00FF, no gradients, shadows, spill or use of this key color in the character; preserve edge color for chroma removal.\nPART INVENTORY (IDs are metadata: do not paint labels):\n- torso [three-quarter-side, center, central body]: Rust-orange fitted scout jacket with raised overlapping collar, complete torso under sleeves, dark waist belt and short hem above hip crease; no neck stump or dangling hip plug; material=rust-orange jacket, dark shoulder panels, collar, belt and front zipper; binding=region.\n- head [three-quarter-side, center, central body]: Short black-haired adult male scout head, neat dark beard with complete neck continuing beneath the collar; material=skin and black hair; binding=region.\n- upperNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- upperFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- lowerNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerNearHand [three-quarter-side, near, right anatomical side, back surface; near camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for right anatomical side, back surface; near camera depth; material=dark leather glove and exposed fingers; binding=region.\n- lowerFarHand [three-quarter-side, far, left anatomical side, palm surface; far camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for left anatomical side, palm surface; far camera depth; material=dark leather glove and exposed fingers; binding=region.\n- legNearBoot [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legFarBoot [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legNear + legNearShin).\n- legFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legFar + legFarShin).\nJOINT DESIGN:\n- neck: covered-overlap, parts=head + torso, seam owner=torso. Full head-owned neck extends behind front collar; keep visible chest skin and no horizontal cut line\n- hipNear: covered-overlap, parts=legNear + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeNear: continuous-mesh, parts=legNear, seam owner=legNear. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowNear: covered-overlap, parts=upperNear + lowerNear, seam owner=upperNear. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleNear: covered-overlap, parts=legNear + legNearBoot, seam owner=legNear. Leg covers proximal boot opening; foot stays rigid and independently controlled\n- hipFar: covered-overlap, parts=legFar + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeFar: continuous-mesh, parts=legFar, seam owner=legFar. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowFar: covered-overlap, parts=upperFar + lowerFar, seam owner=upperFar. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleFar: covered-overlap, parts=legFar + legFarBoot, seam owner=legFar. Leg covers proximal boot opening; foot stays rigid and independently controlled\nREFERENCE OCCLUSION (back to front):\nthree-quarter-side: lowerFarHand → lowerFar → upperFar → legFarBoot → legFar → legNearBoot → legNear → head → torso → lowerNearHand → lowerNear → upperNear\nGive each part complete hidden material and enough opaque overlap for its planned bend range. Continuous meshes must have a single continuous silhouette and natural folds across the joint: no duplicate joint caps or artificial hinge disks. Split only where specified, conceal cut edges beneath their seam owner. Keep far/near and anatomical left/right distinct; do not copy an asymmetric paired appendage. Separate parts with generous empty margins, never overlap sheet cells. If the inventory is too crowded, generate smaller semantic groups with the same master. Do not paint pivots, guides, labels, bounding boxes or anatomy markers. Preserve real armor hardware when specified.\n\n\nUse case: identity-preserve. INPUT IMAGE is the identity/assembled appearance reference ONLY. Generate a single production CUTOUT PARTS SHEET, NOT an assembled character or sequence of poses. 12 isolated parts, three rows of four cells on a LARGE square canvas. Row 1 left to right: complete head with neck, sleeveless torso with collar and belt, right/near upper sleeve, left/far upper sleeve. Row 2 left to right: right/near bare forearm, left/far bare forearm, right/near gloved hand showing dorsal side, left/far gloved hand showing palm side. Row 3 left to right: right/near COMPLETE grey trouser leg from hip to ankle, left/far COMPLETE grey trouser leg from hip to ankle, right/near boot showing outer surface, left/far boot showing inner surface. Generous empty magenta gutters between all twelve parts. NO names, numbers, row lines or cell borders. Keep exact master identity, orange jacket, rolled sleeve material, short hair, beard, grey cloth and brown boots. Each entire trouser leg MUST be one continuous flexible illustration, never thigh/shin pieces or knee armor. Leg pose is nearly straight with a gentle anatomical bend; knees face right, ankles below hips. The legs are long relative to torso and should occupy most of row 3 height; feet are separate and much smaller. Forearms are bare skin, gloves at distal wrist only, sleeves cover proximal overlap. Hands are compact relaxed fists suitable for punching. Head must include full natural neck extending into collar, torso has an empty collar opening not a skin stump. Complete hips extend invisibly under jacket. NO tan disks, hinges, cut-face rings or marks. Both boot toes point right, far foot clearly inner surface without duplicating the near boot's outer buckle. Do not mirror the near hand/boot to fake far anatomy. Keep body half-side predominantly profile facing right. No cast shadows. Flat uniform magenta #FF00FF. High resolution crisp edges, keep all cutouts entirely inside canvas.\n",
+        "reference": "master.png"
+      },
+      "sha256": "3676b4c47f4d9ae8669a0a9f1126dd8b511dbb001fb5e018a6b5863e271deaa2",
+      "normalizedFile": "assets/legNearBoot.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 140,
+        "height": 104,
+        "originalWidth": 141,
+        "originalHeight": 104
+      }
+    },
+    {
+      "id": "legFarBoot",
+      "file": "assets/legFarBoot.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "far",
+      "anatomy": {
+        "side": "left",
+        "pair": "boot",
+        "surface": "inner"
+      },
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 532.38,
+        "y": 835.9200000000001,
+        "width": 151.14000000000001,
+        "height": 100.32000000000001,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          57,
+          38
+        ],
+        "source1": [
+          157,
+          38
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Character brief: 用更新后的工作流生成一个新角色测试。测试角色：半侧身朝右的成年男性山地斥候，黑色短发和短胡须，铁锈橙短外套、灰色长裤、棕色短靴与无指手套。制作待机、原地行走、原地跑步及徒手攻击。\nIdentity and morphology: humanoid; Adult male mountain scout, short black hair, neat dark beard, rust-orange short jacket with raised collar and dark belt, slate-grey flexible trousers, brown ankle boots and dark fingerless gloves. Compact athletic proportions. Crisp hand-painted 2D game art with simple consistent shading.\nPresentation: side-scroller, three-quarter-side, facing right. Predominantly profile, 15–30 degrees toward viewer; stable orthographic game proportions.\nActions:\n- idle: 自然站立和轻微呼吸; 2s; loop=true; in-place; views=three-quarter-side\n- walk: 朝右原地行走，交替支撑，脚掌接地; 1.4s; loop=true; in-place; views=three-quarter-side\n- run: 朝右原地跑步，抬腿、屈肘摆臂; 0.8s; loop=true; in-place; views=three-quarter-side\n- attack: 蓄势、向右出拳、跟随、收拳恢复; 1.2s; loop=false; in-place; views=three-quarter-side\nUse the attached inspected master as identity reference. Generate only the requested parts for each view, keeping scale, lighting and material consistent.\nBackground: flat uniform #FF00FF, no gradients, shadows, spill or use of this key color in the character; preserve edge color for chroma removal.\nPART INVENTORY (IDs are metadata: do not paint labels):\n- torso [three-quarter-side, center, central body]: Rust-orange fitted scout jacket with raised overlapping collar, complete torso under sleeves, dark waist belt and short hem above hip crease; no neck stump or dangling hip plug; material=rust-orange jacket, dark shoulder panels, collar, belt and front zipper; binding=region.\n- head [three-quarter-side, center, central body]: Short black-haired adult male scout head, neat dark beard with complete neck continuing beneath the collar; material=skin and black hair; binding=region.\n- upperNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- upperFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap; material=rust-orange fabric and dark rolled cuff; binding=region.\n- lowerNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face; material=natural skin with dark leather wrist cuff; binding=region.\n- lowerNearHand [three-quarter-side, near, right anatomical side, back surface; near camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for right anatomical side, back surface; near camera depth; material=dark leather glove and exposed fingers; binding=region.\n- lowerFarHand [three-quarter-side, far, left anatomical side, palm surface; far camera depth]: Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for left anatomical side, palm surface; far camera depth; material=dark leather glove and exposed fingers; binding=region.\n- legNearBoot [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legFarBoot [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: Independent rigid boot and foot, ankle overlap hidden beneath leg; material=brown leather; binding=region.\n- legNear [three-quarter-side, near, right anatomical side, outer surface; near camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legNear + legNearShin).\n- legFar [three-quarter-side, far, left anatomical side, inner surface; far camera depth]: One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot; material=slate-grey trouser fabric; binding=mesh (legFar + legFarShin).\nJOINT DESIGN:\n- neck: covered-overlap, parts=head + torso, seam owner=torso. Full head-owned neck extends behind front collar; keep visible chest skin and no horizontal cut line\n- hipNear: covered-overlap, parts=legNear + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeNear: continuous-mesh, parts=legNear, seam owner=legNear. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowNear: covered-overlap, parts=upperNear + lowerNear, seam owner=upperNear. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleNear: covered-overlap, parts=legNear + legNearBoot, seam owner=legNear. Leg covers proximal boot opening; foot stays rigid and independently controlled\n- hipFar: covered-overlap, parts=legFar + torso, seam owner=torso. Complete trouser hip extends beneath tunic hem, fitted to the new master hip position\n- kneeFar: continuous-mesh, parts=legFar, seam owner=legFar. Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap\n- elbowFar: covered-overlap, parts=upperFar + lowerFar, seam owner=upperFar. Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap\n- ankleFar: covered-overlap, parts=legFar + legFarBoot, seam owner=legFar. Leg covers proximal boot opening; foot stays rigid and independently controlled\nREFERENCE OCCLUSION (back to front):\nthree-quarter-side: lowerFarHand → lowerFar → upperFar → legFarBoot → legFar → legNearBoot → legNear → head → torso → lowerNearHand → lowerNear → upperNear\nGive each part complete hidden material and enough opaque overlap for its planned bend range. Continuous meshes must have a single continuous silhouette and natural folds across the joint: no duplicate joint caps or artificial hinge disks. Split only where specified, conceal cut edges beneath their seam owner. Keep far/near and anatomical left/right distinct; do not copy an asymmetric paired appendage. Separate parts with generous empty margins, never overlap sheet cells. If the inventory is too crowded, generate smaller semantic groups with the same master. Do not paint pivots, guides, labels, bounding boxes or anatomy markers. Preserve real armor hardware when specified.\n\n\nUse case: identity-preserve. INPUT IMAGE is the identity/assembled appearance reference ONLY. Generate a single production CUTOUT PARTS SHEET, NOT an assembled character or sequence of poses. 12 isolated parts, three rows of four cells on a LARGE square canvas. Row 1 left to right: complete head with neck, sleeveless torso with collar and belt, right/near upper sleeve, left/far upper sleeve. Row 2 left to right: right/near bare forearm, left/far bare forearm, right/near gloved hand showing dorsal side, left/far gloved hand showing palm side. Row 3 left to right: right/near COMPLETE grey trouser leg from hip to ankle, left/far COMPLETE grey trouser leg from hip to ankle, right/near boot showing outer surface, left/far boot showing inner surface. Generous empty magenta gutters between all twelve parts. NO names, numbers, row lines or cell borders. Keep exact master identity, orange jacket, rolled sleeve material, short hair, beard, grey cloth and brown boots. Each entire trouser leg MUST be one continuous flexible illustration, never thigh/shin pieces or knee armor. Leg pose is nearly straight with a gentle anatomical bend; knees face right, ankles below hips. The legs are long relative to torso and should occupy most of row 3 height; feet are separate and much smaller. Forearms are bare skin, gloves at distal wrist only, sleeves cover proximal overlap. Hands are compact relaxed fists suitable for punching. Head must include full natural neck extending into collar, torso has an empty collar opening not a skin stump. Complete hips extend invisibly under jacket. NO tan disks, hinges, cut-face rings or marks. Both boot toes point right, far foot clearly inner surface without duplicating the near boot's outer buckle. Do not mirror the near hand/boot to fake far anatomy. Keep body half-side predominantly profile facing right. No cast shadows. Flat uniform magenta #FF00FF. High resolution crisp edges, keep all cutouts entirely inside canvas.\n",
+        "reference": "master.png"
+      },
+      "sha256": "91607c59980c73e8c742f4538e63b1746d34f962c1535333e70126752b7c71be",
+      "normalizedFile": "assets/legFarBoot.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 151,
+        "height": 100,
+        "originalWidth": 151,
+        "originalHeight": 100
+      }
+    },
+    {
+      "id": "collarFront",
+      "file": "assets/collarFront.png",
+      "view": "three-quarter-side",
+      "facing": "right",
+      "depth": "center",
+      "trimAlphaThreshold": 1,
+      "placement": {
+        "x": 454,
+        "y": 176,
+        "width": 104,
+        "height": 121,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {
+        "source0": [
+          -4,
+          3
+        ],
+        "source1": [
+          164,
+          313
+        ]
+      },
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Use case: precise-object-edit. Input image is the EDIT TARGET. Make ONE targeted production correction ONLY to the TORSO in top row second column. Its near shoulder currently has a large hollow dark circular armhole with a thick outlined orange rim. This becomes an ugly exposed disk when the separate sleeve rotates forward. REPAINT that entire armhole interior AND all its inner concentric rim lines as smooth CONTINUOUS RUST-ORANGE JACKET FABRIC, with natural shoulder/underarm shading continuing from the chest. It must NOT look like a vest opening, cut tube, socket, circle, ring, disk or hole. This is hidden complete jacket material underneath the separate moving sleeve. Keep the outer silhouette and top shoulder panel, collar, zipper, chest, waist belt, hem, pose, dimensions and scale the same. Remove the oval-shaped internal outline across the filled area; no circle-shaped seam. No arm attached to torso: only repaint its exposed socket surface into unbroken cloth. ALL OTHER ELEVEN PARTS remain unchanged. Keep exact 1254x1254 sheet layout, flat magenta background, identity, materials and lighting. No labels or guides.\n Mechanical foreground collar extraction from selected torso; no new painted pixels.",
+        "reference": "master.png"
+      },
+      "sha256": "5304245d039af045d690bd31e2d44b725beda3bc0869ce216313fa953191048d",
+      "normalizedFile": "assets/collarFront.png",
+      "trim": {
+        "x": 0,
+        "y": 0,
+        "width": 104,
+        "height": 121,
+        "originalWidth": 104,
+        "originalHeight": 121
+      }
+    }
+  ],
+  "masterAlignment": {
+    "scale": 0.75,
+    "x": 30,
+    "y": 63,
+    "basis": "Whole master scaled uniformly by 0.75, waist center approximately (638,460) mapped to (509,408). Open hands and perspective foot heights intentionally differ from gameplay bind pose."
+  }
+}

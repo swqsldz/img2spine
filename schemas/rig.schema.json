@@ -1,0 +1,441 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "bones": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]+$"
+          },
+          "parent": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]+$"
+          },
+          "x": {
+            "default": 0,
+            "type": "number"
+          },
+          "y": {
+            "default": 0,
+            "type": "number"
+          },
+          "rotation": {
+            "default": 0,
+            "type": "number"
+          },
+          "scaleX": {
+            "default": 1,
+            "type": "number"
+          },
+          "scaleY": {
+            "default": 1,
+            "type": "number"
+          },
+          "length": {
+            "default": 0,
+            "type": "number",
+            "minimum": 0
+          },
+          "range": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "x",
+          "y",
+          "rotation",
+          "scaleX",
+          "scaleY",
+          "length"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "slots": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]+$"
+          },
+          "bone": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]+$"
+          },
+          "attachment": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]+$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "attachments": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]+$"
+                },
+                "asset": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]+$"
+                },
+                "type": {
+                  "default": "region",
+                  "type": "string",
+                  "enum": [
+                    "region",
+                    "mesh"
+                  ]
+                },
+                "influences": {
+                  "default": [],
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9_-]+$"
+                  }
+                },
+                "spacing": {
+                  "default": 24,
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "jointBlend": {
+                  "default": 0.3,
+                  "type": "number",
+                  "minimum": 0.05,
+                  "maximum": 1.5
+                }
+              },
+              "required": [
+                "name",
+                "asset",
+                "type",
+                "influences",
+                "spacing",
+                "jointBlend"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "name",
+          "bone",
+          "attachment",
+          "attachments"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "ik": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]+$"
+          },
+          "bones": {
+            "minItems": 1,
+            "maxItems": 2,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_-]+$"
+            }
+          },
+          "target": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]+$"
+          },
+          "bendPositive": {
+            "default": true,
+            "type": "boolean"
+          },
+          "mix": {
+            "default": 1,
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "name",
+          "bones",
+          "target",
+          "bendPositive",
+          "mix"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "roles": {
+      "default": {},
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9_-]+$"
+      }
+    },
+    "layerRules": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "behind": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]+$"
+          },
+          "inFront": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]+$"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "animations": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_-]+$"
+            }
+          }
+        },
+        "required": [
+          "behind",
+          "inFront",
+          "reason",
+          "animations"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "motionModel": {
+      "type": "object",
+      "properties": {
+        "body": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$"
+        },
+        "root": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$"
+        },
+        "limbs": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]+$"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "leg",
+                  "wing",
+                  "arm",
+                  "tentacle"
+                ]
+              },
+              "bones": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]+$"
+                }
+              },
+              "target": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]+$"
+              },
+              "end": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]+$"
+              },
+              "phase": {
+                "default": 0,
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "direction": {
+                "default": 1,
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "const": -1
+                  },
+                  {
+                    "type": "number",
+                    "const": 1
+                  }
+                ]
+              },
+              "amplitude": {
+                "default": 25,
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "bones",
+              "phase",
+              "direction",
+              "amplitude"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "chains": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]+$"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "spine",
+                  "tail",
+                  "tentacle",
+                  "neck"
+                ]
+              },
+              "bones": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]+$"
+                }
+              },
+              "amplitude": {
+                "default": 8,
+                "type": "number",
+                "minimum": 0
+              },
+              "phaseLag": {
+                "default": 0.15,
+                "type": "number"
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "bones",
+              "amplitude",
+              "phaseLag"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "gait": {
+          "default": {
+            "stride": 40,
+            "lift": 20,
+            "stance": 0.6
+          },
+          "type": "object",
+          "properties": {
+            "stride": {
+              "default": 40,
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "lift": {
+              "default": 20,
+              "type": "number",
+              "minimum": 0
+            },
+            "stance": {
+              "default": 0.6,
+              "type": "number",
+              "minimum": 0.2,
+              "maximum": 0.85
+            }
+          },
+          "required": [
+            "stride",
+            "lift",
+            "stance"
+          ],
+          "additionalProperties": false
+        },
+        "breathAxis": {
+          "default": "scaleY",
+          "type": "string",
+          "enum": [
+            "scaleX",
+            "scaleY"
+          ]
+        }
+      },
+      "required": [
+        "body",
+        "root",
+        "limbs",
+        "chains",
+        "gait",
+        "breathAxis"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bones",
+    "slots",
+    "ik",
+    "roles",
+    "layerRules"
+  ],
+  "additionalProperties": false
+}

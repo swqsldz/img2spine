@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "name": "ember-robot",
+  "prompt": "橙色探险机器人：呼吸眨眼、挥手、原地走跑、起跳落地、出拳收势和转身。",
+  "canvas": {
+    "width": 800,
+    "height": 900,
+    "origin": [
+      400,
+      820
+    ]
+  },
+  "fps": 30,
+  "maxRepairAttempts": 3,
+  "actions": [
+    {
+      "name": "idle",
+      "description": "轻微呼吸并眨眼",
+      "duration": 2,
+      "loop": true,
+      "views": [
+        "front"
+      ],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "wave",
+      "description": "抬右手挥手",
+      "duration": 2,
+      "loop": true,
+      "views": [
+        "front"
+      ],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "walk",
+      "description": "原地行走",
+      "duration": 2,
+      "loop": true,
+      "views": [
+        "front"
+      ],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "run",
+      "description": "原地跑动",
+      "duration": 2,
+      "loop": true,
+      "views": [
+        "front"
+      ],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "jump",
+      "description": "预备、起跳、落地缓冲",
+      "duration": 2,
+      "loop": false,
+      "views": [
+        "front"
+      ],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "attack",
+      "description": "蓄力出拳并收势",
+      "duration": 2,
+      "loop": false,
+      "views": [
+        "front"
+      ],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "turn",
+      "description": "转向背面后转回正面",
+      "duration": 2,
+      "loop": true,
+      "views": [
+        "front",
+        "back"
+      ],
+      "rootMotion": "in-place"
+    }
+  ]
+}

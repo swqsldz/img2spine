@@ -1,0 +1,42 @@
+{
+  "name": "img2spine",
+  "version": "0.3.1",
+  "private": true,
+  "type": "module",
+  "description": "Imagegen asset workflow and pinned Spine 4.3 animation compiler",
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "spine": "tsx src/cli.ts",
+    "demo": "tsx scripts/demo.ts",
+    "qa": "tsx scripts/browser-qa.ts",
+    "schemas": "tsx scripts/export-schemas.ts",
+    "install-skill": "tsx scripts/install-skill.ts",
+    "package": "tsx scripts/package.ts",
+    "format": "prettier --write src scripts tests web skills schemas README.md HISTORY.md package.json tsconfig.json runtime-lock.json",
+    "demo:creature": "tsx scripts/demo-creature.ts",
+    "demo:scout": "tsx scripts/demo-scout.ts"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "dependencies": {
+    "sharp": "0.35.4",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.25.0",
+    "playwright": "^1.58.0",
+    "prettier": "3.8.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swqsldz/img2spine.git"
+  },
+  "homepage": "https://github.com/swqsldz/img2spine#readme"
+}

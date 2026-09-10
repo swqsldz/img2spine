@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "name": "mountain-scout",
+  "prompt": "用更新后的工作流生成一个新角色测试。测试角色：半侧身朝右的成年男性山地斥候，黑色短发和短胡须，铁锈橙短外套、灰色长裤、棕色短靴与无指手套。制作待机、原地行走、原地跑步及徒手攻击。",
+  "character": {
+    "morphology": "humanoid",
+    "description": "Adult male mountain scout, short black hair, neat dark beard, rust-orange short jacket with raised collar and dark belt, slate-grey flexible trousers, brown ankle boots and dark fingerless gloves. Compact athletic proportions. Crisp hand-painted 2D game art with simple consistent shading."
+  },
+  "presentation": {
+    "usage": "side-scroller",
+    "facing": "right",
+    "mirrorPolicy": "symmetric-only",
+    "groundY": 940
+  },
+  "canvas": {
+    "width": 1024,
+    "height": 1024,
+    "origin": [
+      512,
+      940
+    ]
+  },
+  "fps": 30,
+  "maxRepairAttempts": 3,
+  "actions": [
+    {
+      "name": "idle",
+      "description": "自然站立和轻微呼吸",
+      "duration": 2,
+      "loop": true,
+      "views": [],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "walk",
+      "description": "朝右原地行走，交替支撑，脚掌接地",
+      "duration": 1.4,
+      "loop": true,
+      "views": [],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "run",
+      "description": "朝右原地跑步，抬腿、屈肘摆臂",
+      "duration": 0.8,
+      "loop": true,
+      "views": [],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "attack",
+      "description": "蓄势、向右出拳、跟随、收拳恢复",
+      "duration": 1.2,
+      "loop": false,
+      "views": [],
+      "rootMotion": "in-place"
+    }
+  ]
+}

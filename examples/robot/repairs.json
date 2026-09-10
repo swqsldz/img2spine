@@ -1,0 +1,14 @@
+{
+  "arm": {
+    "source": "generation-id:exec-fd65072a-5878-4930-8930-0e6c5dda24e8.png",
+    "prompt": "Remove the ENTIRE gray and white checkerboard background from this image. It is an unwanted painted backdrop. Preserve only the exact orange and navy robot arm with all edges, proportions, colors and internal details unchanged. Output a PNG cutout with ACTUAL fully transparent alpha outside the subject. Do not draw any replacement background, checkerboard, shadow or floor. This is background extraction for a game sprite."
+  },
+  "leg": {
+    "source": "generation-id:exec-857f0c30-5ac3-4f02-b65b-0a121caf9ff9.png",
+    "prompt": "Remove the ENTIRE gray and white checkerboard background from this image. It is an unwanted painted backdrop. Preserve only the exact orange and navy robot leg with all edges, proportions, colors and internal details unchanged. Output a PNG cutout with ACTUAL fully transparent alpha outside the subject. Do not draw any replacement background, checkerboard, shadow or floor. This is background extraction for a game sprite."
+  },
+  "head-back": {
+    "source": "generation-id:exec-f4d8964e-9046-48a4-b232-51f70d5b070e.png",
+    "prompt": "Extract exact rear helmet; remove painted checkerboard and output actual transparent alpha PNG."
+  }
+}

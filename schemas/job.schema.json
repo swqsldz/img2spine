@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "name": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+$"
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "character": {
+      "default": {
+        "morphology": "unspecified",
+        "description": ""
+      },
+      "type": "object",
+      "properties": {
+        "morphology": {
+          "default": "unspecified",
+          "type": "string",
+          "enum": [
+            "unspecified",
+            "humanoid",
+            "quadruped",
+            "multi-legged",
+            "serpentine",
+            "winged",
+            "amorphous",
+            "custom"
+          ]
+        },
+        "description": {
+          "default": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "morphology",
+        "description"
+      ],
+      "additionalProperties": false
+    },
+    "presentation": {
+      "default": {
+        "usage": "general",
+        "facing": "right",
+        "mirrorPolicy": "symmetric-only"
+      },
+      "type": "object",
+      "properties": {
+        "usage": {
+          "default": "general",
+          "type": "string",
+          "enum": [
+            "general",
+            "side-scroller"
+          ]
+        },
+        "view": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$"
+        },
+        "facing": {
+          "default": "right",
+          "type": "string",
+          "enum": [
+            "left",
+            "right"
+          ]
+        },
+        "mirrorPolicy": {
+          "default": "symmetric-only",
+          "type": "string",
+          "enum": [
+            "symmetric-only",
+            "separate-art"
+          ]
+        },
+        "groundY": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "usage",
+        "facing",
+        "mirrorPolicy"
+      ],
+      "additionalProperties": false
+    },
+    "canvas": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "height": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "origin": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        }
+      },
+      "required": [
+        "width",
+        "height",
+        "origin"
+      ],
+      "additionalProperties": false
+    },
+    "fps": {
+      "default": 30,
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 120
+    },
+    "maxRepairAttempts": {
+      "default": 3,
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10
+    },
+    "actions": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]+$"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "duration": {
+            "default": 2,
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "loop": {
+            "default": true,
+            "type": "boolean"
+          },
+          "views": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_-]+$"
+            }
+          },
+          "rootMotion": {
+            "default": "in-place",
+            "type": "string",
+            "enum": [
+              "in-place",
+              "translate"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "duration",
+          "loop",
+          "views",
+          "rootMotion"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "name",
+    "prompt",
+    "character",
+    "presentation",
+    "canvas",
+    "fps",
+    "maxRepairAttempts",
+    "actions"
+  ],
+  "additionalProperties": false
+}

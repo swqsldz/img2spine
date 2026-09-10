@@ -1,0 +1,4 @@
+interface:
+  display_name: "Imagegen to Spine"
+  short_description: "用 imagegen 素材制作、编译并验证可播放的 Spine 4.3 骨骼动画"
+  default_prompt: "Use $img2spine to turn my character and motion description into playable Spine 4.3 resources with runtime and visual validation."

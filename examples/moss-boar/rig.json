@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 1,
+  "bones": [
+    {
+      "name": "root",
+      "x": 0,
+      "y": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "x": 60,
+      "y": 180,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 100
+    },
+    {
+      "name": "hindFar",
+      "parent": "body",
+      "x": -130.72000000000003,
+      "y": 13.240000000000009,
+      "rotation": -104.02065702121814,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 71.3248792498102
+    },
+    {
+      "name": "hindFarLower",
+      "parent": "hindFar",
+      "x": 71.32487924981021,
+      "y": 0,
+      "rotation": 44.09321300129496,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 91.9583753662492
+    },
+    {
+      "name": "hindFarFoot",
+      "parent": "hindFarLower",
+      "x": 91.9583753662492,
+      "y": 7.105427357601002e-15,
+      "rotation": 59.92744401992318,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "hindFarTarget",
+      "parent": "root",
+      "x": -41.920000000000016,
+      "y": 44.460000000000036,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "foreFar",
+      "parent": "body",
+      "x": 183.27999999999997,
+      "y": 25.24000000000001,
+      "rotation": -104.02065702121814,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 71.3248792498102
+    },
+    {
+      "name": "foreFarLower",
+      "parent": "foreFar",
+      "x": 71.32487924981018,
+      "y": 0,
+      "rotation": 44.093213001295,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 91.95837536624923
+    },
+    {
+      "name": "foreFarFoot",
+      "parent": "foreFarLower",
+      "x": 91.95837536624923,
+      "y": 0,
+      "rotation": 59.92744401992314,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "foreFarTarget",
+      "parent": "root",
+      "x": 272.08000000000004,
+      "y": 56.460000000000036,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "hindNear",
+      "parent": "body",
+      "x": -164.7,
+      "y": -4.759999999999991,
+      "rotation": -104.0362434679265,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 81.63749138722973
+    },
+    {
+      "name": "hindNearLower",
+      "parent": "hindNear",
+      "x": 81.63749138722972,
+      "y": 2.842170943040401e-14,
+      "rotation": 44.13754803352622,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 105.27775833479733
+    },
+    {
+      "name": "hindNearFoot",
+      "parent": "hindNearLower",
+      "x": 105.27775833479735,
+      "y": 7.105427357601002e-15,
+      "rotation": 59.898695434400274,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "hindNearTarget",
+      "parent": "root",
+      "x": -71.69999999999999,
+      "y": 4.960000000000036,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "foreNear",
+      "parent": "body",
+      "x": 139.29999999999995,
+      "y": -4.759999999999991,
+      "rotation": -104.03624346792644,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 81.63749138722972
+    },
+    {
+      "name": "foreNearLower",
+      "parent": "foreNear",
+      "x": 81.63749138722972,
+      "y": 0,
+      "rotation": 44.13754803352614,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 105.27775833479731
+    },
+    {
+      "name": "foreNearFoot",
+      "parent": "foreNearLower",
+      "x": 105.27775833479728,
+      "y": 0,
+      "rotation": 59.8986954344003,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "foreNearTarget",
+      "parent": "root",
+      "x": 232.29999999999995,
+      "y": 4.960000000000036,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "tail",
+      "parent": "body",
+      "x": -210,
+      "y": 66,
+      "rotation": 156.97450799147197,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 86.92525524840292
+    },
+    {
+      "name": "tailTip",
+      "parent": "tail",
+      "x": 86.92525524840292,
+      "y": -2.842170943040401e-14,
+      "rotation": -6.029112090549091,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 102.95630140987001
+    }
+  ],
+  "slots": [
+    {
+      "name": "hindFar",
+      "bone": "hindFar",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "hindFar",
+          "type": "mesh",
+          "influences": [
+            "hindFar",
+            "hindFarLower"
+          ],
+          "spacing": 14,
+          "jointBlend": 0.7
+        }
+      ]
+    },
+    {
+      "name": "foreFar",
+      "bone": "foreFar",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "foreFar",
+          "type": "mesh",
+          "influences": [
+            "foreFar",
+            "foreFarLower"
+          ],
+          "spacing": 14,
+          "jointBlend": 0.7
+        }
+      ]
+    },
+    {
+      "name": "tail",
+      "bone": "tail",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "tail",
+          "type": "mesh",
+          "influences": [
+            "tail",
+            "tailTip"
+          ],
+          "spacing": 15,
+          "jointBlend": 0.3
+        }
+      ]
+    },
+    {
+      "name": "body",
+      "bone": "body",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "body",
+          "type": "region",
+          "influences": [],
+          "spacing": 24,
+          "jointBlend": 0.3
+        }
+      ]
+    },
+    {
+      "name": "hindNear",
+      "bone": "hindNear",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "hindNear",
+          "type": "mesh",
+          "influences": [
+            "hindNear",
+            "hindNearLower"
+          ],
+          "spacing": 14,
+          "jointBlend": 0.7
+        }
+      ]
+    },
+    {
+      "name": "foreNear",
+      "bone": "foreNear",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "foreNear",
+          "type": "mesh",
+          "influences": [
+            "foreNear",
+            "foreNearLower"
+          ],
+          "spacing": 14,
+          "jointBlend": 0.7
+        }
+      ]
+    }
+  ],
+  "ik": [
+    {
+      "name": "hindFarIK",
+      "bones": [
+        "hindFar",
+        "hindFarLower"
+      ],
+      "target": "hindFarTarget",
+      "bendPositive": true,
+      "mix": 1
+    },
+    {
+      "name": "foreFarIK",
+      "bones": [
+        "foreFar",
+        "foreFarLower"
+      ],
+      "target": "foreFarTarget",
+      "bendPositive": true,
+      "mix": 1
+    },
+    {
+      "name": "hindNearIK",
+      "bones": [
+        "hindNear",
+        "hindNearLower"
+      ],
+      "target": "hindNearTarget",
+      "bendPositive": true,
+      "mix": 1
+    },
+    {
+      "name": "foreNearIK",
+      "bones": [
+        "foreNear",
+        "foreNearLower"
+      ],
+      "target": "foreNearTarget",
+      "bendPositive": true,
+      "mix": 1
+    }
+  ],
+  "roles": {},
+  "motionModel": {
+    "body": "body",
+    "root": "root",
+    "limbs": [
+      {
+        "id": "hindFar",
+        "kind": "leg",
+        "bones": [
+          "hindFar",
+          "hindFarLower"
+        ],
+        "target": "hindFarTarget",
+        "end": "hindFarFoot",
+        "phase": 0.5,
+        "direction": 1,
+        "amplitude": 25
+      },
+      {
+        "id": "foreFar",
+        "kind": "leg",
+        "bones": [
+          "foreFar",
+          "foreFarLower"
+        ],
+        "target": "foreFarTarget",
+        "end": "foreFarFoot",
+        "phase": 0,
+        "direction": 1,
+        "amplitude": 25
+      },
+      {
+        "id": "hindNear",
+        "kind": "leg",
+        "bones": [
+          "hindNear",
+          "hindNearLower"
+        ],
+        "target": "hindNearTarget",
+        "end": "hindNearFoot",
+        "phase": 0,
+        "direction": 1,
+        "amplitude": 25
+      },
+      {
+        "id": "foreNear",
+        "kind": "leg",
+        "bones": [
+          "foreNear",
+          "foreNearLower"
+        ],
+        "target": "foreNearTarget",
+        "end": "foreNearFoot",
+        "phase": 0.5,
+        "direction": 1,
+        "amplitude": 25
+      }
+    ],
+    "chains": [
+      {
+        "id": "leafTail",
+        "kind": "tail",
+        "bones": [
+          "tail",
+          "tailTip"
+        ],
+        "amplitude": 5,
+        "phaseLag": 0.12
+      }
+    ],
+    "gait": {
+      "stride": 20,
+      "lift": 10,
+      "stance": 0.62
+    },
+    "breathAxis": "scaleY"
+  }
+}

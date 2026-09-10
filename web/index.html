@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>img2spine · 动画工作台</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/">img<span>2</span>spine</a
+      ><span class="subtitle">IMAGE TO MOTION / 动画工作台</span
+      ><span class="version" id="version">Spine 4.3</span>
+    </header>
+    <main>
+      <aside>
+        <div class="eyebrow">PROJECT</div>
+        <h1 id="name">正在加载</h1>
+        <p id="prompt"></p>
+        <p id="profile"></p>
+        <div class="section-title">动画 <span id="count"></span></div>
+        <nav id="animations" aria-label="动画列表"></nav>
+        <div class="aside-bottom">
+          <span class="dot"></span>官方 Spine WebGL 渲染<br /><small
+            >预览与导出使用同一份资源</small
+          >
+        </div>
+      </aside>
+      <section class="workspace">
+        <div class="stage-bar">
+          <span id="active-name">—</span>
+          <div>
+            <label><input id="debug" type="checkbox" /> 骨骼与网格</label
+            ><label><input id="light" type="checkbox" /> 浅色背景</label>
+          </div>
+        </div>
+        <div class="stage" id="stage">
+          <canvas id="canvas" aria-label="Spine 动画预览"></canvas
+          ><span class="stage-note">LIVE PREVIEW</span>
+          <div id="error" role="alert" hidden></div>
+        </div>
+        <div class="transport">
+          <button id="play" aria-label="播放或暂停">暂停</button
+          ><input
+            id="seek"
+            type="range"
+            min="0"
+            max="2"
+            step="0.001"
+            value="0"
+            aria-label="动画时间"
+          /><output id="time">0.00 / 2.00 s</output
+          ><select id="speed" aria-label="播放速度">
+            <option value="0.25">0.25×</option>
+            <option value="0.5">0.5×</option>
+            <option value="1" selected>1×</option>
+            <option value="2">2×</option></select
+          ><button id="snapshot">保存画面</button>
+        </div>
+        <div class="bottom">
+          <div>
+            <div class="eyebrow">RESOURCE PACKAGE</div>
+            <div id="downloads"></div>
+          </div>
+          <div>
+            <div class="eyebrow">VALIDATION</div>
+            <p id="status">正在读取验证报告</p>
+          </div>
+        </div>
+      </section>
+      <aside class="inspector">
+        <div class="eyebrow">SKELETON</div>
+        <dl id="metrics"></dl>
+        <div class="section-title">动作阶段</div>
+        <ol id="phases"></ol>
+        <div class="section-title">检查结果</div>
+        <div id="issues"></div>
+        <details>
+          <summary>复原姿势</summary>
+          <img src="/bundle/reconstruction.png" alt="分层素材复原图" />
+        </details>
+      </aside>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

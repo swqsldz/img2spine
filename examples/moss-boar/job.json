@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "name": "moss-boar",
+  "prompt": "2D 横版游戏的非人形四足苔藓小野猪，朝右半侧身，待机、行走、跑动、跳跃和向前冲撞。",
+  "character": {
+    "morphology": "quadruped",
+    "description": "Horizontal animal body; four independent cloven-hoof legs; leaf tail; no human arms."
+  },
+  "presentation": {
+    "usage": "side-scroller",
+    "facing": "right",
+    "mirrorPolicy": "symmetric-only",
+    "groundY": 600
+  },
+  "canvas": {
+    "width": 1000,
+    "height": 700,
+    "origin": [
+      440,
+      600
+    ]
+  },
+  "fps": 30,
+  "maxRepairAttempts": 3,
+  "actions": [
+    {
+      "name": "idle",
+      "description": "待机呼吸与尾巴轻摆",
+      "duration": 2,
+      "loop": true,
+      "views": [],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "walk",
+      "description": "四足错相原地行走",
+      "duration": 2,
+      "loop": true,
+      "views": [],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "run",
+      "description": "四足加速跑动",
+      "duration": 1.2,
+      "loop": true,
+      "views": [],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "hop",
+      "description": "压缩、腾空与落地",
+      "duration": 2,
+      "loop": false,
+      "views": [],
+      "rootMotion": "in-place"
+    },
+    {
+      "name": "lunge",
+      "description": "预备、向右冲撞并收势",
+      "duration": 2,
+      "loop": false,
+      "views": [],
+      "rootMotion": "in-place"
+    }
+  ]
+}

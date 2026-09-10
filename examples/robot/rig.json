@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "bones": [
+    {
+      "name": "root",
+      "x": 0,
+      "y": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "hip",
+      "parent": "root",
+      "x": 0,
+      "y": 210,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "torso",
+      "parent": "hip",
+      "x": 0,
+      "y": 0,
+      "rotation": 90,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 190
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "x": 190,
+      "y": 0,
+      "rotation": -90,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 150
+    },
+    {
+      "name": "antenna",
+      "parent": "head",
+      "x": 5,
+      "y": 250,
+      "rotation": 90,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 100
+    },
+    {
+      "name": "upperArmL",
+      "parent": "hip",
+      "x": -110,
+      "y": 150,
+      "rotation": -90,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 88
+    },
+    {
+      "name": "forearmL",
+      "parent": "upperArmL",
+      "x": 88,
+      "y": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 120
+    },
+    {
+      "name": "handL",
+      "parent": "forearmL",
+      "x": 100,
+      "y": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "upperArmR",
+      "parent": "hip",
+      "x": 110,
+      "y": 150,
+      "rotation": -90,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 88,
+      "range": [
+        0,
+        125
+      ]
+    },
+    {
+      "name": "forearmR",
+      "parent": "upperArmR",
+      "x": 88,
+      "y": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 120,
+      "range": [
+        -30,
+        30
+      ]
+    },
+    {
+      "name": "handR",
+      "parent": "forearmR",
+      "x": 100,
+      "y": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "thighL",
+      "parent": "hip",
+      "x": -65,
+      "y": -15,
+      "rotation": -90,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 80
+    },
+    {
+      "name": "shinL",
+      "parent": "thighL",
+      "x": 80,
+      "y": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 90
+    },
+    {
+      "name": "footL",
+      "parent": "shinL",
+      "x": 90,
+      "y": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "thighR",
+      "parent": "hip",
+      "x": 65,
+      "y": -15,
+      "rotation": -90,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 80
+    },
+    {
+      "name": "shinR",
+      "parent": "thighR",
+      "x": 80,
+      "y": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 90
+    },
+    {
+      "name": "footR",
+      "parent": "shinR",
+      "x": 90,
+      "y": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "footTargetL",
+      "parent": "root",
+      "x": -65,
+      "y": 25,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "footTargetR",
+      "parent": "root",
+      "x": 65,
+      "y": 25,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    }
+  ],
+  "slots": [
+    {
+      "name": "legL",
+      "bone": "thighL",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "legL",
+          "type": "mesh",
+          "influences": [
+            "thighL",
+            "shinL"
+          ],
+          "spacing": 18
+        }
+      ]
+    },
+    {
+      "name": "legR",
+      "bone": "thighR",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "legR",
+          "type": "mesh",
+          "influences": [
+            "thighR",
+            "shinR"
+          ],
+          "spacing": 18
+        }
+      ]
+    },
+    {
+      "name": "armL",
+      "bone": "upperArmL",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "armL",
+          "type": "mesh",
+          "influences": [
+            "upperArmL",
+            "forearmL"
+          ],
+          "spacing": 16
+        }
+      ]
+    },
+    {
+      "name": "armR",
+      "bone": "upperArmR",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "armR",
+          "type": "mesh",
+          "influences": [
+            "upperArmR",
+            "forearmR"
+          ],
+          "spacing": 16
+        }
+      ]
+    },
+    {
+      "name": "body",
+      "bone": "torso",
+      "attachment": "front",
+      "attachments": [
+        {
+          "name": "front",
+          "asset": "body",
+          "type": "region",
+          "influences": [],
+          "spacing": 24
+        },
+        {
+          "name": "back",
+          "asset": "bodyBack",
+          "type": "region",
+          "influences": [],
+          "spacing": 24
+        }
+      ]
+    },
+    {
+      "name": "antenna",
+      "bone": "antenna",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "antenna",
+          "type": "mesh",
+          "influences": [
+            "antenna"
+          ],
+          "spacing": 12
+        }
+      ]
+    },
+    {
+      "name": "head",
+      "bone": "head",
+      "attachment": "front",
+      "attachments": [
+        {
+          "name": "front",
+          "asset": "head",
+          "type": "region",
+          "influences": [],
+          "spacing": 24
+        },
+        {
+          "name": "closed",
+          "asset": "headClosed",
+          "type": "region",
+          "influences": [],
+          "spacing": 24
+        },
+        {
+          "name": "back",
+          "asset": "headBack",
+          "type": "region",
+          "influences": [],
+          "spacing": 24
+        }
+      ]
+    },
+    {
+      "name": "view",
+      "bone": "root",
+      "attachment": null,
+      "attachments": [
+        {
+          "name": "side",
+          "asset": "profile",
+          "type": "region",
+          "influences": [],
+          "spacing": 24
+        },
+        {
+          "name": "sideLeft",
+          "asset": "profileLeft",
+          "type": "region",
+          "influences": [],
+          "spacing": 24
+        },
+        {
+          "name": "rear",
+          "asset": "rear",
+          "type": "region",
+          "influences": [],
+          "spacing": 24
+        }
+      ]
+    }
+  ],
+  "ik": [
+    {
+      "name": "legL",
+      "bones": [
+        "thighL",
+        "shinL"
+      ],
+      "target": "footTargetL",
+      "bendPositive": true,
+      "mix": 1
+    },
+    {
+      "name": "legR",
+      "bones": [
+        "thighR",
+        "shinR"
+      ],
+      "target": "footTargetR",
+      "bendPositive": false,
+      "mix": 1
+    }
+  ],
+  "roles": {
+    "root": "root",
+    "torso": "torso",
+    "head": "head",
+    "antenna": "antenna",
+    "upperArmL": "upperArmL",
+    "forearmL": "forearmL",
+    "upperArmR": "upperArmR",
+    "forearmR": "forearmR",
+    "footL": "footL",
+    "footR": "footR",
+    "footTargetL": "footTargetL",
+    "footTargetR": "footTargetR",
+    "headSlot": "head"
+  }
+}

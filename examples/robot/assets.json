@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "master": "images/master.png",
+  "assets": [
+    {
+      "id": "head",
+      "file": "images/head.png",
+      "view": "front",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 190,
+        "y": 170,
+        "width": 420,
+        "height": 280,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Using the provided master robot as exact visual reference, create an isolated rigging asset: ONLY the robot's orange helmet HEAD front view, with two glowing eyes and dark navy visor, no neck, no antenna, no torso or limbs. Preserve the master's orange paint, navy joints, crisp hand-painted 2D game art and light direction. Center the ONE part large on a genuinely transparent alpha background with 15% margin. No checkerboard, no text, no ground shadow, no extra objects. The part must have complete hidden connection edges so it can rotate in a Spine skeleton. One asset only, not a diagram or sheet.",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "headClosed",
+      "file": "images/head-closed-v3.png",
+      "view": "front",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 190,
+        "y": 170,
+        "width": 420,
+        "height": 280,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Robot part derived from master; transparent extraction and original prompts saved in generation.json and repairs.json",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "headBack",
+      "file": "images/head-back-v2.png",
+      "view": "back",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 190,
+        "y": 170,
+        "width": 420,
+        "height": 280,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Robot part derived from master; transparent extraction and original prompts saved in generation.json and repairs.json",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "body",
+      "file": "images/torso.png",
+      "view": "front",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 285,
+        "y": 425,
+        "width": 230,
+        "height": 205,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Robot part derived from master; transparent extraction and original prompts saved in generation.json and repairs.json",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "bodyBack",
+      "file": "images/torso-back.png",
+      "view": "back",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 285,
+        "y": 425,
+        "width": 230,
+        "height": 205,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Robot part derived from master; transparent extraction and original prompts saved in generation.json and repairs.json",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "armL",
+      "file": "images/arm-v3.png",
+      "view": "front",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 252,
+        "y": 440,
+        "width": 76,
+        "height": 245,
+        "rotation": 0,
+        "mirror": true
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Robot part derived from master; transparent extraction and original prompts saved in generation.json and repairs.json",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "armR",
+      "file": "images/arm-v3.png",
+      "view": "front",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 472,
+        "y": 440,
+        "width": 76,
+        "height": 245,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Robot part derived from master; transparent extraction and original prompts saved in generation.json and repairs.json",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "legL",
+      "file": "images/leg-v3.png",
+      "view": "front",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 285,
+        "y": 604,
+        "width": 100,
+        "height": 226,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Robot part derived from master; transparent extraction and original prompts saved in generation.json and repairs.json",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "legR",
+      "file": "images/leg-v3.png",
+      "view": "front",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 415,
+        "y": 604,
+        "width": 100,
+        "height": 226,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Robot part derived from master; transparent extraction and original prompts saved in generation.json and repairs.json",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "antenna",
+      "file": "images/antenna.png",
+      "view": "front",
+      "trimAlphaThreshold": 200,
+      "placement": {
+        "x": 385,
+        "y": 75,
+        "width": 80,
+        "height": 120,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Using the provided master robot as exact visual reference, create an isolated rigging asset: ONLY the flexible dark navy segmented ANTENNA from the robot head, elongated vertically with a gentle curve to the right and one small cream glowing lamp at its top. Open rounded stem at bottom for attaching to head. No head or other robot parts. Preserve the master's orange paint, navy joints, crisp hand-painted 2D game art and light direction. Center the ONE part large on a genuinely transparent alpha background with 15% margin. No checkerboard, no text, no ground shadow, no extra objects. The part must have complete hidden connection edges so it can rotate in a Spine skeleton. One asset only, not a diagram or sheet.",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "profile",
+      "file": "images/view-profile.png",
+      "view": "side",
+      "trimAlphaThreshold": 200,
+      "sourceRect": {
+        "left": 570,
+        "top": 0,
+        "width": 370,
+        "height": 1024
+      },
+      "placement": {
+        "x": 190,
+        "y": 75,
+        "width": 420,
+        "height": 755,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Robot part derived from master; transparent extraction and original prompts saved in generation.json and repairs.json",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "profileLeft",
+      "file": "images/view-profile.png",
+      "view": "side",
+      "trimAlphaThreshold": 200,
+      "sourceRect": {
+        "left": 570,
+        "top": 0,
+        "width": 370,
+        "height": 1024
+      },
+      "placement": {
+        "x": 190,
+        "y": 75,
+        "width": 420,
+        "height": 755,
+        "rotation": 0,
+        "mirror": true
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Robot part derived from master; transparent extraction and original prompts saved in generation.json and repairs.json",
+        "reference": "images/master.png"
+      }
+    },
+    {
+      "id": "rear",
+      "file": "images/view-profile.png",
+      "view": "back",
+      "trimAlphaThreshold": 200,
+      "sourceRect": {
+        "left": 940,
+        "top": 0,
+        "width": 596,
+        "height": 1024
+      },
+      "placement": {
+        "x": 190,
+        "y": 75,
+        "width": 420,
+        "height": 755,
+        "rotation": 0,
+        "mirror": false
+      },
+      "landmarks": {},
+      "generation": {
+        "mode": "builtin-imagegen",
+        "prompt": "Robot part derived from master; transparent extraction and original prompts saved in generation.json and repairs.json",
+        "reference": "images/master.png"
+      }
+    }
+  ]
+}

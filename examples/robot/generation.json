@@ -1,0 +1,34 @@
+{
+  "mode": "builtin-imagegen",
+  "master": "generation-id:exec-fff18e15-d1e5-4e2e-b63e-4b2b7a1a46a5.png",
+  "assets": {
+    "head": {
+      "source": "generation-id:exec-54b1aca0-7a40-4a88-98f6-42d9cd3c6938.png",
+      "prompt": "Using the provided master robot as exact visual reference, create an isolated rigging asset: ONLY the robot's orange helmet HEAD front view, with two glowing eyes and dark navy visor, no neck, no antenna, no torso or limbs. Preserve the master's orange paint, navy joints, crisp hand-painted 2D game art and light direction. Center the ONE part large on a genuinely transparent alpha background with 15% margin. No checkerboard, no text, no ground shadow, no extra objects. The part must have complete hidden connection edges so it can rotate in a Spine skeleton. One asset only, not a diagram or sheet."
+    },
+    "head-closed": {
+      "source": "generation-id:exec-18106061-e1cb-4b14-8366-0564b8a37505.png",
+      "prompt": "Using the provided master robot as exact visual reference, create an isolated rigging asset: ONLY the robot's orange helmet HEAD front view, same proportions, both eyes CLOSED as two thin cream horizontal curved lines on the dark visor. No neck, no antenna, no torso or limbs. Preserve the master's orange paint, navy joints, crisp hand-painted 2D game art and light direction. Center the ONE part large on a genuinely transparent alpha background with 15% margin. No checkerboard, no text, no ground shadow, no extra objects. The part must have complete hidden connection edges so it can rotate in a Spine skeleton. One asset only, not a diagram or sheet."
+    },
+    "head-back": {
+      "source": "generation-id:exec-dd359dd2-b21e-4ec4-a901-7274a356257c.png",
+      "prompt": "Using the provided master robot as exact visual reference, create an isolated rigging asset: ONLY the BACK VIEW of this exact orange helmet HEAD. Orange rear panel and subtle navy vent lines, ear caps on both sides. No face, no eyes, no antenna, no neck or body. Same straight-on silhouette and dimensions as front helmet. Preserve the master's orange paint, navy joints, crisp hand-painted 2D game art and light direction. Center the ONE part large on a genuinely transparent alpha background with 15% margin. No checkerboard, no text, no ground shadow, no extra objects. The part must have complete hidden connection edges so it can rotate in a Spine skeleton. One asset only, not a diagram or sheet."
+    },
+    "torso": {
+      "source": "generation-id:exec-cdd3f191-4edd-4b94-9208-9bc13b3029d2.png",
+      "prompt": "Using the provided master robot as exact visual reference, create an isolated rigging asset: ONLY the compact orange TORSO and pelvis as one continuous flexible unit, including cream circular chest light and navy waist coupling. No head, no arms or hands, no legs. Complete rounded shoulder attachment sockets and hip attachment sockets. Preserve the master's orange paint, navy joints, crisp hand-painted 2D game art and light direction. Center the ONE part large on a genuinely transparent alpha background with 15% margin. No checkerboard, no text, no ground shadow, no extra objects. The part must have complete hidden connection edges so it can rotate in a Spine skeleton. One asset only, not a diagram or sheet."
+    },
+    "arm": {
+      "source": "generation-id:exec-84fa0875-976d-4cfd-808f-09871a10b763.png",
+      "prompt": "Using the provided master robot as exact visual reference, create an isolated rigging asset: ONLY one complete orange robot ARM, straight vertically downward, shoulder ball at top, upper arm, round navy elbow joint at middle, forearm and mitten hand at bottom. All parts connected, neutral extended pose, slightly rounded overlap at every joint. No body or head. Symmetric enough for mirrored left/right use. Preserve the master's orange paint, navy joints, crisp hand-painted 2D game art and light direction. Center the ONE part large on a genuinely transparent alpha background with 15% margin. No checkerboard, no text, no ground shadow, no extra objects. The part must have complete hidden connection edges so it can rotate in a Spine skeleton. One asset only, not a diagram or sheet."
+    },
+    "leg": {
+      "source": "generation-id:exec-47a028c8-5177-4c83-80bb-c19040cb284b.png",
+      "prompt": "Using the provided master robot as exact visual reference, create an isolated rigging asset: ONLY one complete orange robot LEG, straight vertically downward. Navy round hip at top, orange thigh, navy knee at middle, orange shin and orange chunky forward-facing boot at bottom. All parts connected. No body or head. Symmetric enough for mirrored left/right use. Preserve the master's orange paint, navy joints, crisp hand-painted 2D game art and light direction. Center the ONE part large on a genuinely transparent alpha background with 15% margin. No checkerboard, no text, no ground shadow, no extra objects. The part must have complete hidden connection edges so it can rotate in a Spine skeleton. One asset only, not a diagram or sheet."
+    },
+    "antenna": {
+      "source": "generation-id:exec-6c7a4791-3469-4798-aea3-8bc01386d1b0.png",
+      "prompt": "Using the provided master robot as exact visual reference, create an isolated rigging asset: ONLY the flexible dark navy segmented ANTENNA from the robot head, elongated vertically with a gentle curve to the right and one small cream glowing lamp at its top. Open rounded stem at bottom for attaching to head. No head or other robot parts. Preserve the master's orange paint, navy joints, crisp hand-painted 2D game art and light direction. Center the ONE part large on a genuinely transparent alpha background with 15% margin. No checkerboard, no text, no ground shadow, no extra objects. The part must have complete hidden connection edges so it can rotate in a Spine skeleton. One asset only, not a diagram or sheet."
+    }
+  }
+}

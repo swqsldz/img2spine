@@ -1,0 +1,424 @@
+{
+  "joints": [
+    {
+      "name": "root",
+      "point": [
+        440,
+        600
+      ]
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "point": [
+        500,
+        420
+      ],
+      "tip": [
+        600,
+        420
+      ]
+    },
+    {
+      "name": "hindFar",
+      "parent": "body",
+      "point": [
+        369.28,
+        406.76
+      ],
+      "tip": [
+        352,
+        475.96000000000004
+      ]
+    },
+    {
+      "name": "hindFarLower",
+      "parent": "hindFar",
+      "point": [
+        352,
+        475.96000000000004
+      ],
+      "tip": [
+        398.08,
+        555.54
+      ]
+    },
+    {
+      "name": "hindFarFoot",
+      "parent": "hindFarLower",
+      "point": [
+        398.08,
+        555.54
+      ]
+    },
+    {
+      "name": "hindFarTarget",
+      "parent": "root",
+      "point": [
+        398.08,
+        555.54
+      ]
+    },
+    {
+      "name": "foreFar",
+      "parent": "body",
+      "point": [
+        683.28,
+        394.76
+      ],
+      "tip": [
+        666,
+        463.96000000000004
+      ]
+    },
+    {
+      "name": "foreFarLower",
+      "parent": "foreFar",
+      "point": [
+        666,
+        463.96000000000004
+      ],
+      "tip": [
+        712.08,
+        543.54
+      ]
+    },
+    {
+      "name": "foreFarFoot",
+      "parent": "foreFarLower",
+      "point": [
+        712.08,
+        543.54
+      ]
+    },
+    {
+      "name": "foreFarTarget",
+      "parent": "root",
+      "point": [
+        712.08,
+        543.54
+      ]
+    },
+    {
+      "name": "hindNear",
+      "parent": "body",
+      "point": [
+        335.3,
+        424.76
+      ],
+      "tip": [
+        315.5,
+        503.96000000000004
+      ]
+    },
+    {
+      "name": "hindNearLower",
+      "parent": "hindNear",
+      "point": [
+        315.5,
+        503.96000000000004
+      ],
+      "tip": [
+        368.3,
+        595.04
+      ]
+    },
+    {
+      "name": "hindNearFoot",
+      "parent": "hindNearLower",
+      "point": [
+        368.3,
+        595.04
+      ]
+    },
+    {
+      "name": "hindNearTarget",
+      "parent": "root",
+      "point": [
+        368.3,
+        595.04
+      ]
+    },
+    {
+      "name": "foreNear",
+      "parent": "body",
+      "point": [
+        639.3,
+        424.76
+      ],
+      "tip": [
+        619.5,
+        503.96000000000004
+      ]
+    },
+    {
+      "name": "foreNearLower",
+      "parent": "foreNear",
+      "point": [
+        619.5,
+        503.96000000000004
+      ],
+      "tip": [
+        672.3,
+        595.04
+      ]
+    },
+    {
+      "name": "foreNearFoot",
+      "parent": "foreNearLower",
+      "point": [
+        672.3,
+        595.04
+      ]
+    },
+    {
+      "name": "foreNearTarget",
+      "parent": "root",
+      "point": [
+        672.3,
+        595.04
+      ]
+    },
+    {
+      "name": "tail",
+      "parent": "body",
+      "point": [
+        290,
+        354
+      ],
+      "tip": [
+        210,
+        320
+      ]
+    },
+    {
+      "name": "tailTip",
+      "parent": "tail",
+      "point": [
+        210,
+        320
+      ],
+      "tip": [
+        120,
+        270
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "hindFar",
+      "bone": "hindFar",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "hindFar",
+          "type": "mesh",
+          "influences": [
+            "hindFar",
+            "hindFarLower"
+          ],
+          "spacing": 14,
+          "jointBlend": 0.7
+        }
+      ]
+    },
+    {
+      "name": "foreFar",
+      "bone": "foreFar",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "foreFar",
+          "type": "mesh",
+          "influences": [
+            "foreFar",
+            "foreFarLower"
+          ],
+          "spacing": 14,
+          "jointBlend": 0.7
+        }
+      ]
+    },
+    {
+      "name": "tail",
+      "bone": "tail",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "tail",
+          "type": "mesh",
+          "influences": [
+            "tail",
+            "tailTip"
+          ],
+          "spacing": 15
+        }
+      ]
+    },
+    {
+      "name": "body",
+      "bone": "body",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "body",
+          "type": "region"
+        }
+      ]
+    },
+    {
+      "name": "hindNear",
+      "bone": "hindNear",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "hindNear",
+          "type": "mesh",
+          "influences": [
+            "hindNear",
+            "hindNearLower"
+          ],
+          "spacing": 14,
+          "jointBlend": 0.7
+        }
+      ]
+    },
+    {
+      "name": "foreNear",
+      "bone": "foreNear",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "foreNear",
+          "type": "mesh",
+          "influences": [
+            "foreNear",
+            "foreNearLower"
+          ],
+          "spacing": 14,
+          "jointBlend": 0.7
+        }
+      ]
+    }
+  ],
+  "ik": [
+    {
+      "name": "hindFarIK",
+      "bones": [
+        "hindFar",
+        "hindFarLower"
+      ],
+      "target": "hindFarTarget",
+      "bendPositive": true
+    },
+    {
+      "name": "foreFarIK",
+      "bones": [
+        "foreFar",
+        "foreFarLower"
+      ],
+      "target": "foreFarTarget",
+      "bendPositive": true
+    },
+    {
+      "name": "hindNearIK",
+      "bones": [
+        "hindNear",
+        "hindNearLower"
+      ],
+      "target": "hindNearTarget",
+      "bendPositive": true
+    },
+    {
+      "name": "foreNearIK",
+      "bones": [
+        "foreNear",
+        "foreNearLower"
+      ],
+      "target": "foreNearTarget",
+      "bendPositive": true
+    }
+  ],
+  "motionModel": {
+    "body": "body",
+    "root": "root",
+    "limbs": [
+      {
+        "id": "hindFar",
+        "kind": "leg",
+        "bones": [
+          "hindFar",
+          "hindFarLower"
+        ],
+        "target": "hindFarTarget",
+        "end": "hindFarFoot",
+        "phase": 0.5,
+        "direction": 1,
+        "amplitude": 25
+      },
+      {
+        "id": "foreFar",
+        "kind": "leg",
+        "bones": [
+          "foreFar",
+          "foreFarLower"
+        ],
+        "target": "foreFarTarget",
+        "end": "foreFarFoot",
+        "phase": 0,
+        "direction": 1,
+        "amplitude": 25
+      },
+      {
+        "id": "hindNear",
+        "kind": "leg",
+        "bones": [
+          "hindNear",
+          "hindNearLower"
+        ],
+        "target": "hindNearTarget",
+        "end": "hindNearFoot",
+        "phase": 0,
+        "direction": 1,
+        "amplitude": 25
+      },
+      {
+        "id": "foreNear",
+        "kind": "leg",
+        "bones": [
+          "foreNear",
+          "foreNearLower"
+        ],
+        "target": "foreNearTarget",
+        "end": "foreNearFoot",
+        "phase": 0.5,
+        "direction": 1,
+        "amplitude": 25
+      }
+    ],
+    "chains": [
+      {
+        "id": "leafTail",
+        "kind": "tail",
+        "bones": [
+          "tail",
+          "tailTip"
+        ],
+        "amplitude": 5,
+        "phaseLag": 0.12
+      }
+    ],
+    "gait": {
+      "stride": 20,
+      "lift": 10,
+      "stance": 0.62
+    },
+    "breathAxis": "scaleY"
+  }
+}

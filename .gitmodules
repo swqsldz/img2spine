@@ -1,0 +1,3 @@
+[submodule "reference/spine-runtimes"]
+	path = reference/spine-runtimes
+	url = https://github.com/EsotericSoftware/spine-runtimes.git

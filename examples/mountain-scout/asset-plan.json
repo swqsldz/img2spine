@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "background": {
+    "mode": "chroma",
+    "color": "#FF00FF",
+    "reason": "Established user-selected route; character palette does not use magenta"
+  },
+  "parts": [
+    {
+      "id": "torso",
+      "view": "three-quarter-side",
+      "description": "Rust-orange fitted scout jacket with raised overlapping collar, complete torso under sleeves, dark waist belt and short hem above hip crease; no neck stump or dangling hip plug",
+      "material": "rust-orange jacket, dark shoulder panels, collar, belt and front zipper",
+      "depth": "center",
+      "anatomy": "central body",
+      "attachment": "region",
+      "influences": []
+    },
+    {
+      "id": "head",
+      "view": "three-quarter-side",
+      "description": "Short black-haired adult male scout head, neat dark beard with complete neck continuing beneath the collar",
+      "material": "skin and black hair",
+      "depth": "center",
+      "anatomy": "central body",
+      "attachment": "region",
+      "influences": []
+    },
+    {
+      "id": "upperNear",
+      "view": "three-quarter-side",
+      "description": "Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap",
+      "material": "rust-orange fabric and dark rolled cuff",
+      "depth": "near",
+      "anatomy": "right anatomical side, outer surface; near camera depth",
+      "attachment": "region",
+      "influences": []
+    },
+    {
+      "id": "upperFar",
+      "view": "three-quarter-side",
+      "description": "Orange jacket upper sleeve, ending in the dark rolled cuff over the elbow, with hidden shoulder overlap; no bare elbow cap",
+      "material": "rust-orange fabric and dark rolled cuff",
+      "depth": "far",
+      "anatomy": "left anatomical side, inner surface; far camera depth",
+      "attachment": "region",
+      "influences": []
+    },
+    {
+      "id": "lowerNear",
+      "view": "three-quarter-side",
+      "description": "Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face",
+      "material": "natural skin with dark leather wrist cuff",
+      "depth": "near",
+      "anatomy": "right anatomical side, outer surface; near camera depth",
+      "attachment": "region",
+      "influences": []
+    },
+    {
+      "id": "lowerFar",
+      "view": "three-quarter-side",
+      "description": "Bare forearm from elbow beneath rolled sleeve to wrist, with short glove cuff at wrist only; no hand, no closed dark cut face",
+      "material": "natural skin with dark leather wrist cuff",
+      "depth": "far",
+      "anatomy": "left anatomical side, inner surface; far camera depth",
+      "attachment": "region",
+      "influences": []
+    },
+    {
+      "id": "lowerNearHand",
+      "view": "three-quarter-side",
+      "description": "Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for right anatomical side, back surface; near camera depth",
+      "material": "dark leather glove and exposed fingers",
+      "depth": "near",
+      "anatomy": "right anatomical side, back surface; near camera depth",
+      "attachment": "region",
+      "influences": []
+    },
+    {
+      "id": "lowerFarHand",
+      "view": "three-quarter-side",
+      "description": "Independent dark leather fingerless gloved hand, relaxed fist, correct thumb for left anatomical side, palm surface; far camera depth",
+      "material": "dark leather glove and exposed fingers",
+      "depth": "far",
+      "anatomy": "left anatomical side, palm surface; far camera depth",
+      "attachment": "region",
+      "influences": []
+    },
+    {
+      "id": "legNearBoot",
+      "view": "three-quarter-side",
+      "description": "Independent rigid boot and foot, ankle overlap hidden beneath leg",
+      "material": "brown leather",
+      "depth": "near",
+      "anatomy": "right anatomical side, outer surface; near camera depth",
+      "attachment": "region",
+      "influences": []
+    },
+    {
+      "id": "legFarBoot",
+      "view": "three-quarter-side",
+      "description": "Independent rigid boot and foot, ankle overlap hidden beneath leg",
+      "material": "brown leather",
+      "depth": "far",
+      "anatomy": "left anatomical side, inner surface; far camera depth",
+      "attachment": "region",
+      "influences": []
+    },
+    {
+      "id": "legNear",
+      "view": "three-quarter-side",
+      "description": "One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot",
+      "material": "slate-grey trouser fabric",
+      "depth": "near",
+      "anatomy": "right anatomical side, outer surface; near camera depth",
+      "attachment": "mesh",
+      "influences": [
+        "legNear",
+        "legNearShin"
+      ]
+    },
+    {
+      "id": "legFar",
+      "view": "three-quarter-side",
+      "description": "One continuous hip-to-ankle trouser shaft with natural folds through knee; no separate knee cap or foot",
+      "material": "slate-grey trouser fabric",
+      "depth": "far",
+      "anatomy": "left anatomical side, inner surface; far camera depth",
+      "attachment": "mesh",
+      "influences": [
+        "legFar",
+        "legFarShin"
+      ]
+    },
+    {
+      "id": "collarFront",
+      "view": "three-quarter-side",
+      "description": "Independent near/front collar, extracted from torso; rear collar stays on torso behind neck",
+      "material": "rust-orange jacket, dark shoulder panels, collar, belt and front zipper",
+      "depth": "center",
+      "anatomy": "central body",
+      "attachment": "region",
+      "influences": []
+    }
+  ],
+  "joins": [
+    {
+      "id": "neck",
+      "bone": "head",
+      "parts": [
+        "torso",
+        "head",
+        "collarFront"
+      ],
+      "strategy": "covered-overlap",
+      "owner": "collarFront",
+      "description": "Back collar/torso < full head and neck < foreground collar. Inspect both collar sides in motion."
+    },
+    {
+      "id": "hipNear",
+      "bone": "legNear",
+      "parts": [
+        "legNear",
+        "torso"
+      ],
+      "strategy": "covered-overlap",
+      "owner": "torso",
+      "description": "Complete trouser hip extends beneath tunic hem, fitted to the new master hip position"
+    },
+    {
+      "id": "kneeNear",
+      "bone": "legNearShin",
+      "parts": [
+        "legNear"
+      ],
+      "strategy": "continuous-mesh",
+      "owner": "legNear",
+      "description": "Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap"
+    },
+    {
+      "id": "elbowNear",
+      "bone": "lowerNear",
+      "parts": [
+        "upperNear",
+        "lowerNear"
+      ],
+      "strategy": "covered-overlap",
+      "owner": "upperNear",
+      "description": "Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap"
+    },
+    {
+      "id": "ankleNear",
+      "bone": "legNearFoot",
+      "parts": [
+        "legNear",
+        "legNearBoot"
+      ],
+      "strategy": "covered-overlap",
+      "owner": "legNear",
+      "description": "Leg covers proximal boot opening; foot stays rigid and independently controlled"
+    },
+    {
+      "id": "hipFar",
+      "bone": "legFar",
+      "parts": [
+        "legFar",
+        "torso"
+      ],
+      "strategy": "covered-overlap",
+      "owner": "torso",
+      "description": "Complete trouser hip extends beneath tunic hem, fitted to the new master hip position"
+    },
+    {
+      "id": "kneeFar",
+      "bone": "legFarShin",
+      "parts": [
+        "legFar"
+      ],
+      "strategy": "continuous-mesh",
+      "owner": "legFar",
+      "description": "Single continuous trouser silhouette and folds through flexion; weighted thigh and shin, no oval pad or duplicate cap"
+    },
+    {
+      "id": "elbowFar",
+      "bone": "lowerFar",
+      "parts": [
+        "upperFar",
+        "lowerFar"
+      ],
+      "strategy": "covered-overlap",
+      "owner": "upperFar",
+      "description": "Bare forearm proximal skin extends invisibly beneath rolled upper sleeve; sleeve covers elbow root through flexion, no exposed cap"
+    },
+    {
+      "id": "ankleFar",
+      "bone": "legFarFoot",
+      "parts": [
+        "legFar",
+        "legFarBoot"
+      ],
+      "strategy": "covered-overlap",
+      "owner": "legFar",
+      "description": "Leg covers proximal boot opening; foot stays rigid and independently controlled"
+    }
+  ],
+  "drawOrder": {
+    "three-quarter-side": [
+      "lowerFarHand",
+      "lowerFar",
+      "upperFar",
+      "legFarBoot",
+      "legFar",
+      "legNearBoot",
+      "legNear",
+      "torso",
+      "head",
+      "collarFront",
+      "lowerNearHand",
+      "lowerNear",
+      "upperNear"
+    ]
+  }
+}

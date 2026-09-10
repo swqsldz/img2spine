@@ -1,0 +1,14 @@
+{
+  "profile": {
+    "source": "generation-id:exec-9dfcc853-740a-451b-ad27-31f88f260b6a.png",
+    "prompt": "Create a full-body strict right-facing side profile of the EXACT orange explorer robot from the reference. Same head/body/limb proportions, orange helmet, navy joints, cream antenna tip. Neutral upright pose with arms at sides and legs separated slightly. For rear view show no face, only rear helmet vents and rear torso vent; boots point away. For profile show the helmet's physical thickness and single visible ear cap, one thin edge of visor if visible, nose-free robot head. Keep master identity and hand-painted game art. Complete character from antenna tip to soles. Transparent RGBA background, no scene, no glow or floor shadow. This is a single multi-view animation attachment."
+  },
+  "rear": {
+    "source": "generation-id:exec-e3ff9ca2-015b-4f6f-8c9c-e289efc1ce93.png",
+    "prompt": "Create a full-body strict rear view facing away from the camera of the EXACT orange explorer robot from the reference. Same head/body/limb proportions, orange helmet, navy joints, cream antenna tip. Neutral upright pose with arms at sides and legs separated slightly. For rear view show no face, only rear helmet vents and rear torso vent; boots point away. For profile show the helmet's physical thickness and single visible ear cap, one thin edge of visor if visible, nose-free robot head. Keep master identity and hand-painted game art. Complete character from antenna tip to soles. Transparent RGBA background, no scene, no glow or floor shadow. This is a single multi-view animation attachment."
+  },
+  "head-closed-v3": {
+    "prompt": "Robot helmet head front, closed cream eyelid lines, transparent RGBA, exact master silhouette, no outer glow.",
+    "source": "generation-id:exec-80f5f8a3-9a1c-4df5-8af8-fceab749a830.png"
+  }
+}

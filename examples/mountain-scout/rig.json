@@ -1,0 +1,568 @@
+{
+  "schemaVersion": 1,
+  "bones": [
+    {
+      "name": "root",
+      "x": 0,
+      "y": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "x": -2,
+      "y": 530,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "head",
+      "parent": "body",
+      "x": 0,
+      "y": 190,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "legFar",
+      "parent": "body",
+      "x": 24,
+      "y": -56,
+      "rotation": -77.31122483541814,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 175.92625937228416
+    },
+    {
+      "name": "legFarShin",
+      "parent": "legFar",
+      "x": 175.92625937228422,
+      "y": -2.842170943040401e-14,
+      "rotation": -13.366713330645766,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 223.38591999867194
+    },
+    {
+      "name": "legFarFoot",
+      "parent": "legFarShin",
+      "x": 223.385919998672,
+      "y": 4.263256414560601e-14,
+      "rotation": 90.67793816606391,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "legFarTarget",
+      "parent": "root",
+      "x": 58,
+      "y": 79,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "legFarToeTarget",
+      "parent": "root",
+      "x": 118,
+      "y": 79,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "legNear",
+      "parent": "body",
+      "x": -26,
+      "y": -58,
+      "rotation": -97.63824646798854,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 175.08599904801835
+    },
+    {
+      "name": "legNearShin",
+      "parent": "legNear",
+      "x": 175.08599904801844,
+      "y": 1.4210854715202004e-14,
+      "rotation": -3.8809904037590286,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 223.97898204516542
+    },
+    {
+      "name": "legNearFoot",
+      "parent": "legNearShin",
+      "x": 223.97898204516542,
+      "y": 4.263256414560601e-14,
+      "rotation": 101.5192368717476,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "legNearTarget",
+      "parent": "root",
+      "x": -96,
+      "y": 79,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "legNearToeTarget",
+      "parent": "root",
+      "x": -36,
+      "y": 79,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "upperFar",
+      "parent": "body",
+      "x": 56,
+      "y": 138,
+      "rotation": -77.82081894747587,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 142.20056258679148
+    },
+    {
+      "name": "lowerFar",
+      "parent": "upperFar",
+      "x": 142.20056258679153,
+      "y": 2.842170943040401e-14,
+      "rotation": 11.019409461124056,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 91.3892772703669
+    },
+    {
+      "name": "lowerFarHand",
+      "parent": "lowerFar",
+      "x": 91.3892772703669,
+      "y": 5.684341886080802e-14,
+      "rotation": 66.80140948635182,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    },
+    {
+      "name": "upperNear",
+      "parent": "body",
+      "x": -88,
+      "y": 157,
+      "rotation": -108.8773784809615,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 163.8108665504215
+    },
+    {
+      "name": "lowerNear",
+      "parent": "upperNear",
+      "x": 163.81086655042157,
+      "y": 5.684341886080802e-14,
+      "rotation": 22.822564709999057,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 87.20665112249179
+    },
+    {
+      "name": "lowerNearHand",
+      "parent": "lowerNear",
+      "x": 87.2066511224919,
+      "y": 0,
+      "rotation": 86.05481377096244,
+      "scaleX": 1,
+      "scaleY": 1,
+      "length": 0
+    }
+  ],
+  "slots": [
+    {
+      "name": "lowerFarHand",
+      "bone": "lowerFarHand",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "lowerFarHand",
+          "type": "region",
+          "influences": [],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    },
+    {
+      "name": "lowerFar",
+      "bone": "lowerFar",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "lowerFar",
+          "type": "region",
+          "influences": [],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    },
+    {
+      "name": "upperFar",
+      "bone": "upperFar",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "upperFar",
+          "type": "region",
+          "influences": [],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    },
+    {
+      "name": "legFarBoot",
+      "bone": "legFarFoot",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "legFarBoot",
+          "type": "region",
+          "influences": [],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    },
+    {
+      "name": "legFar",
+      "bone": "legFar",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "legFar",
+          "type": "mesh",
+          "influences": [
+            "legFar",
+            "legFarShin"
+          ],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    },
+    {
+      "name": "legNearBoot",
+      "bone": "legNearFoot",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "legNearBoot",
+          "type": "region",
+          "influences": [],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    },
+    {
+      "name": "legNear",
+      "bone": "legNear",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "legNear",
+          "type": "mesh",
+          "influences": [
+            "legNear",
+            "legNearShin"
+          ],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    },
+    {
+      "name": "torso",
+      "bone": "body",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "torso",
+          "type": "region",
+          "influences": [],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    },
+    {
+      "name": "head",
+      "bone": "head",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "head",
+          "type": "region",
+          "influences": [],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    },
+    {
+      "name": "collarFront",
+      "bone": "body",
+      "attachment": "collarFront",
+      "attachments": [
+        {
+          "name": "collarFront",
+          "asset": "collarFront",
+          "type": "region"
+        }
+      ]
+    },
+    {
+      "name": "lowerNearHand",
+      "bone": "lowerNearHand",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "lowerNearHand",
+          "type": "region",
+          "influences": [],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    },
+    {
+      "name": "lowerNear",
+      "bone": "lowerNear",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "lowerNear",
+          "type": "region",
+          "influences": [],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    },
+    {
+      "name": "upperNear",
+      "bone": "upperNear",
+      "attachment": "default",
+      "attachments": [
+        {
+          "name": "default",
+          "asset": "upperNear",
+          "type": "region",
+          "influences": [],
+          "spacing": 9,
+          "jointBlend": 0.42
+        }
+      ]
+    }
+  ],
+  "ik": [
+    {
+      "name": "legFarIK",
+      "bones": [
+        "legFar",
+        "legFarShin"
+      ],
+      "target": "legFarTarget",
+      "bendPositive": false,
+      "mix": 1
+    },
+    {
+      "name": "legFarFootIK",
+      "bones": [
+        "legFarFoot"
+      ],
+      "target": "legFarToeTarget",
+      "bendPositive": true,
+      "mix": 1
+    },
+    {
+      "name": "legNearIK",
+      "bones": [
+        "legNear",
+        "legNearShin"
+      ],
+      "target": "legNearTarget",
+      "bendPositive": false,
+      "mix": 1
+    },
+    {
+      "name": "legNearFootIK",
+      "bones": [
+        "legNearFoot"
+      ],
+      "target": "legNearToeTarget",
+      "bendPositive": true,
+      "mix": 1
+    }
+  ],
+  "roles": {},
+  "layerRules": [
+    {
+      "behind": "lowerFarHand",
+      "inFront": "lowerFar",
+      "reason": "Declared fixed-view reference order: far arm behind both legs, collar covers neck, rolled sleeves cover elbow roots.",
+      "animations": []
+    },
+    {
+      "behind": "lowerFar",
+      "inFront": "upperFar",
+      "reason": "Declared fixed-view reference order: far arm behind both legs, collar covers neck, rolled sleeves cover elbow roots.",
+      "animations": []
+    },
+    {
+      "behind": "upperFar",
+      "inFront": "legFarBoot",
+      "reason": "Declared fixed-view reference order: far arm behind both legs, collar covers neck, rolled sleeves cover elbow roots.",
+      "animations": []
+    },
+    {
+      "behind": "legFarBoot",
+      "inFront": "legFar",
+      "reason": "Declared fixed-view reference order: far arm behind both legs, collar covers neck, rolled sleeves cover elbow roots.",
+      "animations": []
+    },
+    {
+      "behind": "legFar",
+      "inFront": "legNearBoot",
+      "reason": "Declared fixed-view reference order: far arm behind both legs, collar covers neck, rolled sleeves cover elbow roots.",
+      "animations": []
+    },
+    {
+      "behind": "legNearBoot",
+      "inFront": "legNear",
+      "reason": "Declared fixed-view reference order: far arm behind both legs, collar covers neck, rolled sleeves cover elbow roots.",
+      "animations": []
+    },
+    {
+      "behind": "legNear",
+      "inFront": "head",
+      "reason": "Declared fixed-view reference order: far arm behind both legs, collar covers neck, rolled sleeves cover elbow roots.",
+      "animations": []
+    },
+    {
+      "behind": "torso",
+      "inFront": "lowerNearHand",
+      "reason": "Declared fixed-view reference order: far arm behind both legs, collar covers neck, rolled sleeves cover elbow roots.",
+      "animations": []
+    },
+    {
+      "behind": "lowerNearHand",
+      "inFront": "lowerNear",
+      "reason": "Declared fixed-view reference order: far arm behind both legs, collar covers neck, rolled sleeves cover elbow roots.",
+      "animations": []
+    },
+    {
+      "behind": "lowerNear",
+      "inFront": "upperNear",
+      "reason": "Declared fixed-view reference order: far arm behind both legs, collar covers neck, rolled sleeves cover elbow roots.",
+      "animations": []
+    },
+    {
+      "behind": "torso",
+      "inFront": "head",
+      "reason": "Rear collar lies behind the neck"
+    },
+    {
+      "behind": "head",
+      "inFront": "collarFront",
+      "reason": "Near collar covers neck base without covering beard"
+    }
+  ],
+  "motionModel": {
+    "body": "body",
+    "root": "root",
+    "limbs": [
+      {
+        "id": "legFar",
+        "kind": "leg",
+        "bones": [
+          "legFar",
+          "legFarShin"
+        ],
+        "target": "legFarTarget",
+        "end": "legFarFoot",
+        "phase": 0.5,
+        "direction": 1,
+        "amplitude": 25
+      },
+      {
+        "id": "legNear",
+        "kind": "leg",
+        "bones": [
+          "legNear",
+          "legNearShin"
+        ],
+        "target": "legNearTarget",
+        "end": "legNearFoot",
+        "phase": 0,
+        "direction": 1,
+        "amplitude": 25
+      },
+      {
+        "id": "armFar",
+        "kind": "arm",
+        "bones": [
+          "upperFar",
+          "lowerFar"
+        ],
+        "phase": 0,
+        "direction": 1,
+        "amplitude": 25
+      },
+      {
+        "id": "armNear",
+        "kind": "arm",
+        "bones": [
+          "upperNear",
+          "lowerNear"
+        ],
+        "phase": 0,
+        "direction": 1,
+        "amplitude": 25
+      }
+    ],
+    "chains": [],
+    "gait": {
+      "stride": 80,
+      "lift": 35,
+      "stance": 0.6
+    },
+    "breathAxis": "scaleY"
+  }
+}

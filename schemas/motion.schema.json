@@ -1,0 +1,350 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "clips": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]+$"
+          },
+          "duration": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "loop": {
+            "type": "boolean"
+          },
+          "phases": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              },
+              "required": [
+                "name",
+                "start",
+                "end"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "bones": {
+            "default": {},
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "time": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "x": {
+                    "type": "number"
+                  },
+                  "y": {
+                    "type": "number"
+                  },
+                  "rotation": {
+                    "type": "number"
+                  },
+                  "scaleX": {
+                    "type": "number"
+                  },
+                  "scaleY": {
+                    "type": "number"
+                  },
+                  "curve": {
+                    "default": "smooth",
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "const": "linear"
+                      },
+                      {
+                        "type": "string",
+                        "const": "stepped"
+                      },
+                      {
+                        "type": "string",
+                        "const": "smooth"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "time",
+                  "curve"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "slots": {
+            "default": {},
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "time": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "attachment": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^[a-zA-Z0-9_-]+$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "time",
+                  "attachment"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "drawOrder": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "time": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "slots": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9_-]+$"
+                  }
+                }
+              },
+              "required": [
+                "time",
+                "slots"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "deforms": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "slot": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]+$"
+                },
+                "attachment": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]+$"
+                },
+                "keys": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "time": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "vertices": {
+                        "type": "array",
+                        "items": {
+                          "type": "number"
+                        }
+                      },
+                      "curve": {
+                        "default": "smooth",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "linear"
+                          },
+                          {
+                            "type": "string",
+                            "const": "stepped"
+                          },
+                          {
+                            "type": "string",
+                            "const": "smooth"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "time",
+                      "vertices",
+                      "curve"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "slot",
+                "attachment",
+                "keys"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "contacts": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "bone": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]+$"
+                },
+                "start": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "point": {
+                  "type": "array",
+                  "prefixItems": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "number"
+                    }
+                  ]
+                },
+                "velocity": {
+                  "type": "array",
+                  "prefixItems": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "number"
+                    }
+                  ]
+                },
+                "tolerance": {
+                  "default": 3,
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              },
+              "required": [
+                "bone",
+                "start",
+                "end",
+                "point",
+                "tolerance"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "secondary": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "bone": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]+$"
+                },
+                "amplitude": {
+                  "type": "number"
+                },
+                "cycles": {
+                  "default": 1,
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "phase": {
+                  "default": 0,
+                  "type": "number"
+                },
+                "damping": {
+                  "default": 0,
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "bone",
+                "amplitude",
+                "cycles",
+                "phase",
+                "damping"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "name",
+          "duration",
+          "loop",
+          "phases",
+          "bones",
+          "slots",
+          "drawOrder",
+          "deforms",
+          "contacts",
+          "secondary"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "clips"
+  ],
+  "additionalProperties": false
+}
