@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-09-10T07:31:50.514Z",
+  "testedCommit": "a701d36e1ae10014f1b5c2e93ba6c0dafa72947c",
+  "environment": "Windows 11, Node.js 24, official runtime submodule downloaded over HTTPS, fresh npm ci; no pre-existing output directory",
+  "checks": {
+    "typecheck": true,
+    "build": true,
+    "tests": {
+      "passed": 33,
+      "failed": 0
+    },
+    "trackedWorktreeUnchanged": true
+  },
+  "samples": [
+    {
+      "name": "robot",
+      "resourceHashes": {
+        "ember-robot.json": "0ab7c0b932b466a76c29255b7a7e9ce0dc1850f7924c8da90e8ef51863fd7916",
+        "ember-robot.atlas": "9c9f3f3df4bfec6ba860625aca1b506746773cee4d9422606383d5c134b9f0f5",
+        "ember-robot-1.png": "b117872d52f0553e3fa70df492f1f39451b48b6bcc83cda306fa0a03becf774a"
+      },
+      "technicalPassed": true,
+      "visualPassed": false,
+      "rebuiltApprovalState": "needs-visual-review",
+      "browserPassed": true,
+      "actions": 7,
+      "frames": 84,
+      "runtime": {
+        "commit": "4309c05c287d3f15da778e68f5d2a483fe10a6a3",
+        "packageVersion": "4.3.13",
+        "dataVersion": "4.3.75-beta"
+      },
+      "masterComparisonGenerated": true
+    },
+    {
+      "name": "moss-boar",
+      "resourceHashes": {
+        "moss-boar.json": "c819e024845f2aa1331cc8ea6375a6008164e3fc00343f6735a3aad53296bbb1",
+        "moss-boar.atlas": "ea571beebf1d59babd9be8a78c96276d73aa8e0bb218fadc464dcc44516015c1",
+        "moss-boar-1.png": "96654527d12d165974aa684fad4c343de54a5c94c55be9c14fd692adb9fb5a25"
+      },
+      "technicalPassed": true,
+      "visualPassed": false,
+      "rebuiltApprovalState": "needs-visual-review",
+      "browserPassed": true,
+      "actions": 5,
+      "frames": 60,
+      "runtime": {
+        "commit": "4309c05c287d3f15da778e68f5d2a483fe10a6a3",
+        "packageVersion": "4.3.13",
+        "dataVersion": "4.3.75-beta"
+      },
+      "masterComparisonGenerated": true
+    },
+    {
+      "name": "mountain-scout",
+      "resourceHashes": {
+        "mountain-scout.json": "c4d6681f0568e253e9d1635b969afc1f6b55800be4a6848b0fd57b0e86f9718f",
+        "mountain-scout.atlas": "3a2229b60d0227cbeca13eba09ae6f3a4255f245402dffbdb7d7e549c3b3aafd",
+        "mountain-scout-1.png": "73d3c6514330f782a41b5e9abd0e8512e21a5734fd2ffb29723929db62a77a86"
+      },
+      "technicalPassed": true,
+      "visualPassed": false,
+      "rebuiltApprovalState": "needs-visual-review",
+      "browserPassed": true,
+      "actions": 4,
+      "frames": 48,
+      "runtime": {
+        "commit": "4309c05c287d3f15da778e68f5d2a483fe10a6a3",
+        "packageVersion": "4.3.13",
+        "dataVersion": "4.3.75-beta"
+      },
+      "masterComparisonGenerated": true
+    }
+  ],
+  "visualInspection": {
+    "scope": "Release reproducibility, not blanket artistic acceptance",
+    "scout": "Inspected all four 12-frame detail sheets and master/runtime comparison. Collar and head registration match the selected final runtime resources. Cutout sleeve appearance remains.",
+    "boar": "Inspected run sheet; stylized gait reuses a leg illustration. No blanket anatomy/pose approval.",
+    "robot": "Inspected turn sheet; discrete view switching changes proportions and some sliced edge fragments remain near feet. Kept as a capability prototype, not a production art reference."
+  }
+}

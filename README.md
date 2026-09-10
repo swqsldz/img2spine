@@ -60,11 +60,11 @@ git submodule update --init --recursive
 
 ### 三个可复现样例
 
-| 样例       | 重建命令                | 输出                           | 演示内容与限制                                                                       |
-| ---------- | ----------------------- | ------------------------------ | ------------------------------------------------------------------------------------ |
-| 山地侦察员 | `npm run demo:scout`    | `output/mountain-scout/export` | 半侧身待机、走、跑、出拳；连续腿网格、独立前领及母图对比。大幅转臂仍有分件袖口观感。 |
-| 苔藓野猪   | `npm run demo:creature` | `output/moss-boar/export`      | 四足待机、走、跑、跳、冲撞；复用腿部插画，母图与部件轮廓仍有差异。                   |
-| 机器人     | `npm run demo`          | `output/robot/export`          | 待机眨眼、挥手、走跑、跳、攻击、转身；正面原型与对称肢体，转身是离散插画切换。       |
+| 样例       | 重建命令                | 输出                           | 演示内容与限制                                                                                     |
+| ---------- | ----------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------- |
+| 山地侦察员 | `npm run demo:scout`    | `output/mountain-scout/export` | 半侧身待机、走、跑、出拳；连续腿网格、独立前领及母图对比。大幅转臂仍有分件袖口观感。               |
+| 苔藓野猪   | `npm run demo:creature` | `output/moss-boar/export`      | 四足待机、走、跑、跳、冲撞；复用腿部插画，母图与部件轮廓仍有差异。                                 |
+| 机器人     | `npm run demo`          | `output/robot/export`          | 待机眨眼、挥手、走跑、跳、攻击、转身；正面原型与对称肢体，转身是离散插画切换，部分切片边缘有残留。 |
 
 所有命令使用仓库中保存的素材，不重新生图、不写回示例输入，也不复制旧视觉批准。侦察员输入保留最终归一后的拆件与配准；其他样例保留所需源图片和制作规格。详见 [样例说明](examples/README.md)。
 
@@ -120,6 +120,8 @@ npm run package -- output/mountain-scout/export
 - `package` 在输出目录生成独立 `preview/index.html`。用静态 HTTP 服务提供整个输出目录即可播放；打包资源和 runtime 仍只存在本地输出，不提交至主仓库。
 
 不保证首次生图即可用，也不宣称所有物种、动作或透视变化都达到成品质量。单张正面图不能可靠提供背面；多视角需要额外美术。尚未验收 Spine 编辑器导入、Unity 或移动设备。旧实验记录见 [历史研究说明](docs/HISTORICAL-RESEARCH.md)；其中未发布的本地路径和旧命令不是当前快速开始入口。
+
+本次干净检出的验证记录见 [发布验证](docs/release-validation.json)：33 项测试、16 个动作、192 帧浏览器采样。该记录不自动授予重新构建后的视觉批准。
 
 ### Runtime 与许可
 
@@ -178,11 +180,11 @@ Open `http://127.0.0.1:4173` to select animations, pause, scrub, change speed, i
 
 ### Reproducible examples
 
-| Example        | Command                 | Output                         | Demonstration and limitations                                                                                                                                       |
-| -------------- | ----------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mountain scout | `npm run demo:scout`    | `output/mountain-scout/export` | Half-side idle, walk, run and punch; continuous trouser meshes, separate front collar and master comparison. Large arm rotations retain a cutout sleeve appearance. |
-| Moss boar      | `npm run demo:creature` | `output/moss-boar/export`      | Quadruped idle, walk, run, hop and lunge. Reuses a leg illustration; master and assembled silhouettes differ.                                                       |
-| Robot          | `npm run demo`          | `output/robot/export`          | Idle/blink, wave, walk/run, jump, attack and turn. Frontal prototype with symmetric limbs; turning uses discrete alternate illustrations.                           |
+| Example        | Command                 | Output                         | Demonstration and limitations                                                                                                                                                |
+| -------------- | ----------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mountain scout | `npm run demo:scout`    | `output/mountain-scout/export` | Half-side idle, walk, run and punch; continuous trouser meshes, separate front collar and master comparison. Large arm rotations retain a cutout sleeve appearance.          |
+| Moss boar      | `npm run demo:creature` | `output/moss-boar/export`      | Quadruped idle, walk, run, hop and lunge. Reuses a leg illustration; master and assembled silhouettes differ.                                                                |
+| Robot          | `npm run demo`          | `output/robot/export`          | Idle/blink, wave, walk/run, jump, attack and turn. Frontal prototype with symmetric limbs; turning uses discrete alternate illustrations; some sliced edge fragments remain. |
 
 Commands reuse saved artwork, do not write back to example inputs, and do not copy previous visual approvals. The scout preserves final normalized cutouts and registration; other examples retain required source artwork and specifications. See [example notes](examples/README.md).
 
@@ -236,6 +238,8 @@ npm run package -- output/mountain-scout/export
 - `package` creates a standalone `preview/index.html` inside the output directory. Serve the entire directory over static HTTP; packaged resources and runtime stay in local output and are not committed to the parent repository.
 
 First-generation usability is not guaranteed. Not every morphology, action or perspective is production-ready. A frontal illustration cannot reliably supply a back view; extra perspectives require artwork. Spine Editor import, Unity and mobile-device integration have not been accepted. [Historical research notes](docs/HISTORICAL-RESEARCH.md) reference local experiments whose excluded artifacts and old commands are not current quick-start instructions.
+
+See the [release validation record](docs/release-validation.json): 33 tests, 16 animations and 192 browser frames from a clean checkout. This record does not automatically approve future rebuilds.
 
 ### Runtime and licensing
 
