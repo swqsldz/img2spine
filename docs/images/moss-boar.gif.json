@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "renderer": "Official Spine WebGL / Edge SwiftShader",
+  "animation": "run",
+  "resourceHashes": {
+    "moss-boar.json": "c819e024845f2aa1331cc8ea6375a6008164e3fc00343f6735a3aad53296bbb1",
+    "moss-boar.atlas": "ea571beebf1d59babd9be8a78c96276d73aa8e0bb218fadc464dcc44516015c1",
+    "moss-boar-1.png": "96654527d12d165974aa684fad4c343de54a5c94c55be9c14fd692adb9fb5a25"
+  },
+  "runtime": {
+    "commit": "4309c05c287d3f15da778e68f5d2a483fe10a6a3",
+    "packageVersion": "4.3.13",
+    "dataVersion": "4.3.75-beta"
+  },
+  "frames": 30,
+  "width": 440,
+  "height": 480,
+  "durationMs": 1200,
+  "loop": true,
+  "crop": {
+    "left": 375,
+    "top": 173,
+    "width": 710,
+    "height": 441
+  },
+  "sha256": "4e82374188c2342f11b3a2aade03252570f96c782057752e3ffb3921f4ccb7eb",
+  "bytes": 1593749
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "renderer": "Official Spine WebGL / Edge SwiftShader",
+  "animation": "wave",
+  "resourceHashes": {
+    "ember-robot.json": "0ab7c0b932b466a76c29255b7a7e9ce0dc1850f7924c8da90e8ef51863fd7916",
+    "ember-robot.atlas": "9c9f3f3df4bfec6ba860625aca1b506746773cee4d9422606383d5c134b9f0f5",
+    "ember-robot-1.png": "b117872d52f0553e3fa70df492f1f39451b48b6bcc83cda306fa0a03becf774a"
+  },
+  "runtime": {
+    "commit": "4309c05c287d3f15da778e68f5d2a483fe10a6a3",
+    "packageVersion": "4.3.13",
+    "dataVersion": "4.3.75-beta"
+  },
+  "frames": 50,
+  "width": 440,
+  "height": 480,
+  "durationMs": 2000,
+  "loop": true,
+  "crop": {
+    "left": 541,
+    "top": 96,
+    "width": 400,
+    "height": 560
+  },
+  "sha256": "5d552eb4adb3303257c2f7238826db85d8c1664168b0fa615d460f07271079ae",
+  "bytes": 1313488
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "renderer": "Official Spine WebGL / Edge SwiftShader",
+  "animation": "walk",
+  "resourceHashes": {
+    "mountain-scout.json": "74b93f24d4e26cb1d46a11902958eaa9960c9980575cab87f1fab3d39cdd0464",
+    "mountain-scout.atlas": "6f227b406a9486c9012f3cee9c1199fc43f9da07d4310e7cbfd87fa2aa460322",
+    "mountain-scout-1.png": "359e07b2f2adce712c2d8840d980e56ab3db8b5fba3c46b7fee5162d04d50239"
+  },
+  "runtime": {
+    "commit": "4309c05c287d3f15da778e68f5d2a483fe10a6a3",
+    "packageVersion": "4.3.13",
+    "dataVersion": "4.3.75-beta"
+  },
+  "frames": 35,
+  "width": 440,
+  "height": 480,
+  "durationMs": 1400,
+  "loop": true,
+  "crop": {
+    "left": 543,
+    "top": 109,
+    "width": 321,
+    "height": 545
+  },
+  "sha256": "43fe850b7611f36c8a373bb2417d9afaf44dba338a72d49c7629546e3950d285",
+  "bytes": 1564895
+}

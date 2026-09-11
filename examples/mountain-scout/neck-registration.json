@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-11",
+  "reason": "The original head's neck ended behind the throat opening, exposing orange torso fill. The old foreground collar did not cover both inner shirt lips or the complete hidden nape.",
+  "head": {
+    "sourceHash": "77447a464fa2586e4056414b27cabb6cadcd13f9600b88776f93e3d84c16a5d7",
+    "sourceSize": [1178, 1335],
+    "key": [251, 4, 249],
+    "crop": {"left":168,"top":8,"width":810,"height":1170},
+    "cropAlphaThreshold": 80,
+    "cropReason": "Ignore faint key-background noise when locating subject bounds; retain antialiasing inside the selected rectangle.",
+    "normalizedSize": [124,179],
+    "canvasTopLeft": [459,86],
+    "pivotCanvas": [532,236],
+    "localPivotOnBody": [22,174]
+  },
+  "foreground": {
+    "source": "assets/torso.png",
+    "sourceSize": [226,312],
+    "maskPath": "M0 0 L73 0 L127 29 L127 45 L137 51 L148 77 L153 84 L156 61 L155 41 L171 49 L167 81 L164 113 L180 145 L226 145 L0 145 Z",
+    "crop": {"left":0,"top":3,"width":180,"height":142},
+    "canvasTopLeft": [385,174.75],
+    "method": "Mechanical alpha mask of original torso pixels; near outer collar and both inner shirt lips stay in front of the neck. Artwork-specific coordinates."
+  },
+  "scope": "Fixed half-side view. Inspect setup/master and all four action detail sheets after rebuilding. This record is not transferable visual approval."
+}

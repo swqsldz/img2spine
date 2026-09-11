@@ -23,8 +23,8 @@
     {
       "name": "head",
       "parent": "body",
-      "x": 0,
-      "y": 190,
+      "x": 22,
+      "y": 174,
       "rotation": 0,
       "scaleX": 1,
       "scaleY": 1,

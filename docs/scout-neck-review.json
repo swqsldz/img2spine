@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-09-11T12:21:38.304Z",
+  "hashes": {
+    "mountain-scout.json": "74b93f24d4e26cb1d46a11902958eaa9960c9980575cab87f1fab3d39cdd0464",
+    "mountain-scout.atlas": "6f227b406a9486c9012f3cee9c1199fc43f9da07d4310e7cbfd87fa2aa460322",
+    "mountain-scout-1.png": "359e07b2f2adce712c2d8840d980e56ab3db8b5fba3c46b7fee5162d04d50239"
+  },
+  "reviewContextHash": "146f8e72e4885aa23447d7ada0371cbaacbf6f21260e5a73a62c58730a53a7fd",
+  "animations": [
+    "idle",
+    "walk",
+    "run",
+    "attack"
+  ],
+  "evidence": [
+    "frames/idle-details.png",
+    "frames/walk-details.png",
+    "frames/run-details.png",
+    "frames/attack-details.png",
+    "frames/master-runtime-comparison.png"
+  ],
+  "coverage": {
+    "morphology": "humanoid",
+    "view": "three-quarter-side",
+    "facing": "right"
+  },
+  "checks": {
+    "laterality": true,
+    "occlusion": true,
+    "articulation": true,
+    "masterComparison": true
+  },
+  "acceptanceScope": "Four fixed-view prototype actions and corrected neck seam; not official-art-quality equivalence.",
+  "observations": [
+    "Inspected four current 12-frame detail sheets and enlarged neck crops. Complete skin now fills the inner shirt opening, without the old orange wedge or exposed nape edge. Both shirt lips and near outer collar occlude the neck through sampled head/body motion.",
+    "Near dorsal glove and far palm remain distinct; whole far arm remains behind the legs. Continuous trouser meshes retain connected knees. The punch still has a cutout sleeve appearance and the gait remains stylized."
+  ],
+  "masterComparison": {
+    "evidenceHashes": {
+      "master-original.png": "bd4e656b0e98e9a2ff99db451c23755d6a296744c1bda622dfc07a2bc6cb59ca",
+      "master-aligned.png": "a0e3917d7003a4f4e4b60cd2ff4e86fddda58faab78c4a12e6fbeab978c4da94",
+      "assembly-reference.png": "1a9412db0cba158c21871cb87ee973c39d6017d60c0c69e4ff4f91532fb9c29a",
+      "master-comparison.png": "d5a331829b7296c265535e311a359ae4b632f7c95388e74db60174d9005e3d45",
+      "master-overlay.png": "2db7617d16fbe8296e74f5fd03b2581727b01b6449fe38060c1242c6f48e3710"
+    },
+    "observations": [
+      "Inspected current original-versus-runtime setup comparison using the same uniform waist alignment. Head and neck reconnect inside the raised collar; hair, beard, orange jacket and half-side identity remain recognizable.",
+      "Fists replace reference open hands, boots share the game plane, torso width and trouser folds differ from the master. Regenerated facial details are similar rather than pixel-identical."
+    ]
+  },
+  "evidenceLocation": "Regenerate with npm run demo:scout and npm run qa; frame evidence remains local. This historical review must not be copied onto rebuilt bundles."
+}

@@ -16,7 +16,8 @@
     "package": "tsx scripts/package.ts",
     "format": "prettier --write src scripts tests web skills schemas README.md HISTORY.md package.json tsconfig.json runtime-lock.json",
     "demo:creature": "tsx scripts/demo-creature.ts",
-    "demo:scout": "tsx scripts/demo-scout.ts"
+    "demo:scout": "tsx scripts/demo-scout.ts",
+    "animate": "tsx scripts/export-animation.ts"
   },
   "engines": {
     "node": ">=22.18.0"

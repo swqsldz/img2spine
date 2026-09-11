@@ -4,9 +4,11 @@
 
 [中文](#中文) · [English](#english) · [MIT](LICENSE) · [第三方许可 / Third-party notices](THIRD_PARTY_NOTICES.md)
 
-|         机器人 / Robot          |          苔藓野猪 / Moss boar           |            山地侦察员 / Mountain scout            |
-| :-----------------------------: | :-------------------------------------: | :-----------------------------------------------: |
-| ![Robot](docs/images/robot.png) | ![Moss boar](docs/images/moss-boar.png) | ![Mountain scout](docs/images/mountain-scout.png) |
+|             机器人 / Robot             |              苔藓野猪 / Moss boar               |                山地侦察员 / Mountain scout                |
+| :------------------------------------: | :---------------------------------------------: | :-------------------------------------------------------: |
+| ![Robot waving](docs/images/robot.gif) | ![Moss boar running](docs/images/moss-boar.gif) | ![Mountain scout walking](docs/images/mountain-scout.gif) |
+
+官方 Spine runtime 实际渲染，25 fps；整段动作统一取景。Actual official Spine runtime captures at 25 fps, with a fixed crop per clip.
 
 <a id="中文"></a>
 
@@ -87,6 +89,18 @@ npm run install-skill
 imagegen 由 Codex 技能调用；本地 CLI 不直接调用 Codex 内置工具。部件可以逐个生成或使用检查过的拆件图。需要真实透明 alpha；若采用纯色背景去色，必须检查轮廓、溢色与关节重叠。参考 PNG 不是原生分层文件。
 
 ### CLI 与制作数据
+
+README 使用 GitHub [明确支持的 GIF](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files)。动图从最终 bundle 渲染，保留资源哈希、帧数和时长记录（图片旁的 `.json`），不能替代完整动作验收。导出器也支持动画 WebP；[GitHub Markdown 的公开测试](https://github.com/TomasHubelbauer/markdown-webp)提供了嵌入实例。
+
+```bash
+npm run animate -- output/robot/export wave docs/images/robot.gif
+npm run animate -- output/moss-boar/export run docs/images/moss-boar.gif
+npm run animate -- output/mountain-scout/export walk docs/images/mountain-scout.gif
+# 可选 WebP 输出；同样由实际 runtime 逐帧渲染
+npm run animate -- output/mountain-scout/export walk output/mountain-scout/walk.webp
+```
+
+需要 Microsoft Edge（与 `qa` 相同）；画面为 440×480，背景统一为浅色。循环动作省略重复终帧，非循环动作保留收势且只播放一次；GIF 时长按 10ms 精度累计分配。
 
 所有命令使用 `npm run spine -- <命令>`。
 
@@ -205,6 +219,18 @@ In a Codex session where the skill is available:
 The skill calls built-in imagegen; the local CLI cannot directly call Codex tools. Generate individual parts or inspect a whole parts sheet. Require real alpha; a solid-color keying route needs silhouette, spill and overlap checks. A reference PNG is not a native layered file.
 
 ### CLI and production data
+
+The README uses GIF, which [GitHub explicitly supports](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files). Each animation is rendered from the final bundle, with resource hashes, frame count and duration in its adjacent `.json` file. A showcase does not replace full animation review. Animated WebP export is also available; this [public GitHub Markdown test](https://github.com/TomasHubelbauer/markdown-webp) demonstrates embedding it.
+
+```bash
+npm run animate -- output/robot/export wave docs/images/robot.gif
+npm run animate -- output/moss-boar/export run docs/images/moss-boar.gif
+npm run animate -- output/mountain-scout/export walk docs/images/mountain-scout.gif
+# Optional animated WebP, also captured from the actual runtime
+npm run animate -- output/mountain-scout/export walk output/mountain-scout/walk.webp
+```
+
+Requires Microsoft Edge, like `qa`. Captures use a 440×480 light background and one union crop for the entire clip. Loops omit the duplicate endpoint; non-looping actions retain their final pose and play once. GIF delays are cumulatively rounded to 10ms units.
 
 Use `npm run spine -- <command>`.
 

@@ -1,6 +1,6 @@
 {
   "mode": "builtin-imagegen",
-  "description": "Selected final registered cutouts from candidate-04; source image hashes retained, normalized cutouts published. No previous candidate or runtime code included.",
+  "description": "Selected registered cutouts with regenerated complete neck and foreground inner shirt lips. Source hashes retained; no runtime code included.",
   "assets": [
     {
       "id": "torso",
@@ -11,10 +11,11 @@
     },
     {
       "id": "head",
-      "sourceImageHash": "3a61f8d11567f17974452d2181b9653b92541a73fd6366abc169cba029263512",
-      "publishedHash": "e25567fe59170f65e882059ae38fbfeff32c6eaf5f644e7bb4524c8e7f303643",
+      "sourceImageHash": "77447a464fa2586e4056414b27cabb6cadcd13f9600b88776f93e3d84c16a5d7",
+      "publishedHash": "dfc7bf4c1326988bdf0d8cf7064f24b589c1e7acc48dfcb48a2ae17c619aacc5",
       "normalizedFile": "assets/head.png",
-      "prompt": "Use case: precise-object-edit. Input image is EDIT TARGET, a 12-part Spine cutout sheet. Make ONLY TWO corrections. 1) TOP LEFT HEAD: remove every bit of orange collar, zipper, shirt and clothing from this head cutout. Preserve exact face/hair/ears/beard, and complete a natural full bare neck down to a simple unoutlined hidden neck base. The separate torso already owns the collar, so the head must be just hair, face, beard and bare neck, NO clothing. Keep the head top and face scale at the existing location. 2) BOTTOM ROW SECOND COLUMN GREY PANTS: it incorrectly contains TWO attached trouser legs. Replace this component with EXACTLY ONE SINGLE LEFT trouser leg, inner-side view, from complete hidden hip root to ankle cuff. Remove the entire extra rear branch/second leg/crotch. A single long narrow trouser shaft with one thigh, one natural slightly bent knee and one calf, ONE ankle opening, no foot, no kneecap circles. Grey fabric and seam style identical to original. The outer silhouette has just one upper end and one lower end, no fork, notch, slit or Y shape. Keep this corrected single leg roughly in the right half of its former cell, x500–610 on the 1254x1254 sheet, from y700 to1190. Preserve ALL OTHER TEN PARTS including near leg, hands, torso, sleeves and boots unchanged. Preserve sheet dimensions and all layout positions, flat pure magenta #FF00FF background, style and lighting. No labels, extra parts, guides, pivots or shadows. Do not draw an assembled character.\n"
+      "prompt": "Use case: precise-object-edit. Correct the existing male scout head cutout using the original assembled neck as reference. Preserve face, beard, ear, hair silhouette, palette and right-facing half-side view. Extend the full bare neck and small upper chest downward and forward below the beard, including throat and sternocleidomastoid. Lower front endpoint below front third of beard. No clothes, collar, orange pixels or markers. Flat magenta background. Chroma extracted and uniformly normalized to 124px width.",
+      "previousPublishedHash": "e25567fe59170f65e882059ae38fbfeff32c6eaf5f644e7bb4524c8e7f303643"
     },
     {
       "id": "upperNear",
@@ -88,10 +89,11 @@
     },
     {
       "id": "collarFront",
-      "sourceImageHash": "5304245d039af045d690bd31e2d44b725beda3bc0869ce216313fa953191048d",
-      "publishedHash": "5304245d039af045d690bd31e2d44b725beda3bc0869ce216313fa953191048d",
+      "sourceImageHash": "b79b5d73b4ec5d732d3ccf9ae64dbe66a8419688fec535393e8c700a459321f6",
+      "publishedHash": "7f8c2126417f6bf71c28bea267f5c36b833226fd9100ce75f0b41e4648e8f33d",
       "normalizedFile": "assets/collarFront.png",
-      "prompt": "Use case: precise-object-edit. Input image is the EDIT TARGET. Make ONE targeted production correction ONLY to the TORSO in top row second column. Its near shoulder currently has a large hollow dark circular armhole with a thick outlined orange rim. This becomes an ugly exposed disk when the separate sleeve rotates forward. REPAINT that entire armhole interior AND all its inner concentric rim lines as smooth CONTINUOUS RUST-ORANGE JACKET FABRIC, with natural shoulder/underarm shading continuing from the chest. It must NOT look like a vest opening, cut tube, socket, circle, ring, disk or hole. This is hidden complete jacket material underneath the separate moving sleeve. Keep the outer silhouette and top shoulder panel, collar, zipper, chest, waist belt, hem, pose, dimensions and scale the same. Remove the oval-shaped internal outline across the filled area; no circle-shaped seam. No arm attached to torso: only repaint its exposed socket surface into unbroken cloth. ALL OTHER ELEVEN PARTS remain unchanged. Keep exact 1254x1254 sheet layout, flat magenta background, identity, materials and lighting. No labels or guides.\n Mechanical foreground collar extraction from selected torso; no new painted pixels."
+      "prompt": "Use case: precise-object-edit. Input image is the EDIT TARGET. Make ONE targeted production correction ONLY to the TORSO in top row second column. Its near shoulder currently has a large hollow dark circular armhole with a thick outlined orange rim. This becomes an ugly exposed disk when the separate sleeve rotates forward. REPAINT that entire armhole interior AND all its inner concentric rim lines as smooth CONTINUOUS RUST-ORANGE JACKET FABRIC, with natural shoulder/underarm shading continuing from the chest. It must NOT look like a vest opening, cut tube, socket, circle, ring, disk or hole. This is hidden complete jacket material underneath the separate moving sleeve. Keep the outer silhouette and top shoulder panel, collar, zipper, chest, waist belt, hem, pose, dimensions and scale the same. Remove the oval-shaped internal outline across the filled area; no circle-shaped seam. No arm attached to torso: only repaint its exposed socket surface into unbroken cloth. ALL OTHER ELEVEN PARTS remain unchanged. Keep exact 1254x1254 sheet layout, flat magenta background, identity, materials and lighting. No labels or guides.\n Mechanical foreground collar extraction from selected torso; no new painted pixels. Foreground mask now includes both inner shirt lips, following their neckline; preserves original torso pixels.",
+      "previousPublishedHash": "5304245d039af045d690bd31e2d44b725beda3bc0869ce216313fa953191048d"
     }
   ]
 }
